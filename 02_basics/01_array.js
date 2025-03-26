@@ -16,14 +16,14 @@ const myArr2 = new Array(1, 2, 3, 4)
 // myArr.unshift(9)    //--add element at start of an array 
 // myArr.shift()         //--remove first element start of an array
 
-// console.log(myArr.includes(8));
-// console.log(myArr.indexOf(9));
+// console.log(myArr.includes(8));   //--false
+// console.log(myArr.indexOf(9));    //-- -1
 
-const newArr = myArr.join()
+const newArr = myArr.join()    //--it converts into string also
 
-// console.log(myArr);
-// console.log(newArr);
-// console.log(typeof newArr);
+console.log(myArr);       //--[ 1, 2, 3, 4, 5 ]
+console.log(newArr);      //--1,2,3,4,5
+console.log(typeof newArr);  //--string
 
 
 console.log("A ", myArr);          //--A  [ 1, 2, 3, 4, 5 ]
