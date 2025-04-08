@@ -1,14 +1,14 @@
 //-singleton
-// object.create
+// object.create    --constructor through object
 
-//-object Literals
+//-object Literals:-
 
 const mySym = Symbol("key1")
 
 const JsUser = {
     name: "Yogita",
-    "full name": "yogita sanas",
-    // mySym: "mykey1",
+    "full name": "yogita sanas",    //--can't access by dot
+    // mySym: "mykey1",    //--not allowed
     [mySym]: "mykey1",
     age: 20,
     location: "Mumbai",
@@ -20,6 +20,6 @@ const JsUser = {
 console.log(JsUser.name);
 console.log(JsUser["name"]);
 console.log(JsUser["full name"]);
-// console.log(JsUser.mySym);
+// console.log(JsUser.mySym);   //--mykey1
 // console.log(typeof JsUser.mySym);   //--string
 console.log(JsUser[mySym]);
