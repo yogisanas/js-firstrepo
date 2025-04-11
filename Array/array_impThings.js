@@ -7,9 +7,10 @@ var arr = [1, 2, 3, 4]
 // })
 
 //--map - It returns a new array with memory according to mapped array.
+//      - If we want to create a new array by given array then use map.
 
 var newarr = arr.map(function(val){
-    return 13;       //--return val;
+    return 13;       //--return val * 3;
 })
 
 console.log(newarr);
