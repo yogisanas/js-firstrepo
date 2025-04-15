@@ -22,4 +22,16 @@ console.log(JsUser["name"]);
 console.log(JsUser["full name"]);
 // console.log(JsUser.mySym);   //--mykey1
 // console.log(typeof JsUser.mySym);   //--string
-console.log(JsUser[mySym]);
+console.log(JsUser[mySym]);   //--string
+console.log(typeof mySym);    //--symbol
+
+
+JsUser.age = 25        //--override the value
+console.log(JsUser["age"]);
+
+Object.freeze(JsUser)
+JsUser.location = "Pune"
+console.log(JsUser["location"]);
+
+console.log(JsUser);
+
