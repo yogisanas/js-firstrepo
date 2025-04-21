@@ -13,4 +13,8 @@ var newarr = arr.map(function(val){
     return 13;       //--return val * 3;
 })
 
-console.log(newarr);
+//console.log(newarr);
+
+
+//--filter - It gives new array with filtered data.
+//         - It can be smaller or bigger than original array.
