@@ -17,21 +17,29 @@ const JsUser = {
     lastLoginDays: ["Monday", "Saturday"]
 }
 
-console.log(JsUser.name);
-console.log(JsUser["name"]);
-console.log(JsUser["full name"]);
+// console.log(JsUser.name);
+// console.log(JsUser["name"]);
+// console.log(JsUser["full name"]);
 // console.log(JsUser.mySym);   //--mykey1
 // console.log(typeof JsUser.mySym);   //--string
-console.log(JsUser[mySym]);   //--string
-console.log(typeof mySym);    //--symbol
+// console.log(JsUser[mySym]);   //--string
+// console.log(typeof mySym);    //--symbol
 
 
-JsUser.age = 25        //--override the value
-console.log(JsUser["age"]);
+// JsUser.age = 25        //--override the value
+// console.log(JsUser["age"]);
 
-Object.freeze(JsUser)
-JsUser.location = "Pune"
-console.log(JsUser["location"]);
+// Object.freeze(JsUser)    //--after freeze we can't add anything 
+// JsUser.location = "Pune"
+// console.log(JsUser["location"]);
 
-console.log(JsUser);
+// console.log(JsUser);
+
+
+JsUser.greeting = function(){
+    console.log("Hello....");
+    
+}
+
+console.log(JsUser.greeting());
 
