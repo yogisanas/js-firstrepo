@@ -44,6 +44,9 @@ JsUser.greetingTwo = function(){
     console.log(`Hello....${this.name}`);  
 }
 
+// console.log(JsUser.greeting);      //--[Function (anonymous)]  --It doesn't execute function 
+                                                                //--just return reference of that func.
+
 console.log(JsUser.greeting());
 console.log(JsUser.greetingTwo());
 
