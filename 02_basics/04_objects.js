@@ -60,13 +60,58 @@ const users = [
 ]
 
 users[1].name
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));     //--[ 'id', 'name', 'isLoggedIn' ]   --data type is array
-console.log(Object.values(tinderUser));     //--[ '123abc', 'yogii', false ]   --data type is array
-console.log(Object.entries(tinderUser));     //--[ [ 'id', '123abc' ], [ 'name', 'yogii' ], [ 'isLoggedIn', false ] ]   --data type is array
+// console.log(Object.keys(tinderUser));     //--[ 'id', 'name', 'isLoggedIn' ]   --data type is array
+// console.log(Object.values(tinderUser));     //--[ '123abc', 'yogii', false ]   --data type is array
+// console.log(Object.entries(tinderUser));     //--[ [ 'id', '123abc' ], [ 'name', 'yogii' ], [ 'isLoggedIn', false ] ]   --data type is array
 
-console.log(tinderUser.hasOwnProperty('isLogged'));   //--false     --check that property is available or not
+// console.log(tinderUser.hasOwnProperty('isLogged'));   //--false     --check that property is available or not
 
 //--For more methods of objects visit browser & inspect 
 //--      const obj1 = {1 : "a", 2 : "b"}
+
+
+
+//---------Object de-structure----------
+
+const course = {
+    coursename : "js",
+    price : "999",
+    courseInstructor : "yogita"
+}
+
+// course.courseInstructor
+
+const {courseInstructor : instructor} = course
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+
+//---React----------------
+
+// const navbar = ({company}) => {
+
+// }
+
+// navbar(company = "yogita")
+
+
+//----api-------------------
+
+//--json response:- object response
+
+// {
+//     "name" : "yogita",
+//     "coursename" : "js",
+//     "price" : "free"
+// }
+
+//--array response:-
+
+[
+    {},
+    {},
+    {}
+]
