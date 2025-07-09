@@ -8,4 +8,13 @@ function sayMyName(){
     console.log("A");
 }
 
-sayMyName()
+// sayMyName()
+
+function addTwoNumbers(num1, num2){
+    console.log(num1 + num2);
+}
+
+addTwoNumbers(10, 10)  //--20
+addTwoNumbers(10, "10")  //--1010
+addTwoNumbers(10, "a")  //--10a
+addTwoNumbers(10, null)  //--10
