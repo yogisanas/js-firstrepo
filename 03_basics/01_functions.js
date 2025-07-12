@@ -68,3 +68,35 @@ console.log(calculateAllCartPrice(100, 200, 300, 5000));    //--[ 100, 200, 300,
 // }
 
 // console.log(calculateAllCartPrice(100, 200, 300, 5000));    //--[ 300, 5000 ]
+
+
+//-------How to pass object in function and use it---------------------------
+
+const user = {
+    username: "yogita",
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);   
+}
+
+// handleObject(user)     //--Username is yogita and price is 199
+
+handleObject({          //--Username is sam and price is 399
+    username: "sam",
+    price: 399
+})
+
+
+//-------------Array--------------------------------------------------------------
+
+const myNewArray = [100, 200, 300, 400]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));    //--200
+
+console.log(returnSecondValue([100, 200, 300, 400]));   //--200
