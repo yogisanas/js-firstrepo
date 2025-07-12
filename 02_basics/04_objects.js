@@ -43,7 +43,7 @@ const allObj = Object.assign({}, obj1, obj2, obj5)
 // console.log(obj1);
 
 //--IMP SYNTAX:-
-const obj6 = {...obj1, ...obj2}
+const obj6 = {...obj1, ...obj2}     //--spread operator
 // console.log(obj6);       //--{ '1': 'a', '2': 'b', '3': 'a', '4': 'b' }  --commonly use syntax......
 
 
