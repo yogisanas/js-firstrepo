@@ -11,9 +11,9 @@ const user = {                //--current context   --inside scope
     }
 }
 
-user.welcomeMessage()    //--yogita , welcome to website
-user.username = "sam"   //--change context
-user.welcomeMessage()    //--sam , welcome to website
+// user.welcomeMessage()    //--yogita , welcome to website
+// user.username = "sam"   //--change context
+// user.welcomeMessage()    //--sam , welcome to website
 
 //-------------- Output--------------------------
 // yogita , welcome to website
@@ -29,12 +29,13 @@ user.welcomeMessage()    //--sam , welcome to website
 //   welcomeMessage: [Function: welcomeMessage]
 // }
 
-console.log(this);    //--{}   --because of node environment
+// console.log(this);    //--{}   --because of node environment
 
 
 // ************************* Arrow Function *************************************
 
 function chai(){
+    let username = "yogita"
     console.log(this);
 }
 
