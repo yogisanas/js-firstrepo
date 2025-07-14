@@ -1,3 +1,4 @@
+// ************************ This ****************************************
 //--context --> values hold by variables
 
 const user = {                //--current context   --inside scope
@@ -29,3 +30,12 @@ user.welcomeMessage()    //--sam , welcome to website
 // }
 
 console.log(this);    //--{}   --because of node environment
+
+
+// ************************* Arrow Function *************************************
+
+function chai(){
+    console.log(this);
+}
+
+chai()
