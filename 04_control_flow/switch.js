@@ -1,3 +1,4 @@
+//--without break; remaining all the code get execute except default.
 
 const month = 3
 
@@ -20,5 +21,24 @@ switch (month) {
 
     default:
         console.log("Invalid");
+        break;
+}
+
+
+//------------------------------------------------------------------------------------------------------
+
+const char = 'A'          //--It's: A
+
+switch (char) {
+    case 'a':
+        console.log("It's: a");
+        break;
+    case 'A':
+        // console.log("It's: A");
+        console.log(`It's: ${char}`);     //--It's: A
+        break;
+
+    default:
+        console.log("Invalid Char");
         break;
 }
