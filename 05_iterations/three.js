@@ -24,4 +24,21 @@ map.set('USA', "United States of America")
 map.set('Fr', "France")
 map.set('IN', "India")
 
-console.log(map);
+// console.log(map); 
+//--Map(3) {             //--output
+//   'IN' => 'India',
+//   'USA' => 'United States of America',
+//   'Fr' => 'France'
+// }
+
+for (const [key, value] of map) {
+    // console.log(key);
+// [ 'IN', 'India' ]                 //--output
+// [ 'USA', 'United States of America' ]
+// [ 'Fr', 'France' ]
+
+   console.log(key, ':-', value);
+// IN :- India                      //--output
+// USA :- United States of America
+// Fr :- France
+}
