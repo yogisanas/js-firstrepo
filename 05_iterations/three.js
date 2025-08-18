@@ -1,4 +1,4 @@
-//-- for of
+//#. for of:-
 
 //-- ["", "", ""]
 //-- [{}, {}, {}]
@@ -15,8 +15,8 @@ for (const greet of greetings) {
 }
 
 
-//-- Maps:-  -- object
-//--unique value, insertion order
+//#. Maps:-  -- object
+//--unique value, insertion order, iterable
 
 const map = new Map()
 map.set('IN', "India")
@@ -37,8 +37,20 @@ for (const [key, value] of map) {
 // [ 'USA', 'United States of America' ]
 // [ 'Fr', 'France' ]
 
-   console.log(key, ':-', value);
+//    console.log(key, ':-', value);
 // IN :- India                      //--output
 // USA :- United States of America
 // Fr :- France
+}
+
+
+//#. Objects:-
+
+const myObject = {
+    'game1' : 'NFS',
+    'game2' : 'Spiderman'
+}
+
+for (const [key, value] of myObject) {
+    //    console.log(key, ':-', value);      //--myObject is not iterable
 }
