@@ -60,5 +60,5 @@ map.set('Fr', "France")
 map.set('IN', "India")
 
 for (const key in map) {
-    console.log(key);         //--not work
+    // console.log(key);         //--not work
 }
