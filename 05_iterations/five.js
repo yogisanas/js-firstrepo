@@ -38,6 +38,7 @@ coding.forEach( (item, index, arr) => {
 })
 
 
+//--object:-
 const myCoding = [
     {
         languageName: "javascript",
