@@ -20,9 +20,17 @@ const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const newNums = myNums.filter( (item) => item > 5)
 
-const newNums = myNums.filter( (item) => {
-     return item > 5
-})     
+// const newNums = myNums.filter( (item) => {
+//      return item > 5
+// })     
 //--when you open scope '{}' use return keyword otherwise it gives '[]' empty array
+
+const newNums = []
+
+myNums.forEach((item) => {
+     if (item > 5) {
+          newNums.push(item)
+     }
+})
 
 console.log(newNums);        //--[ 6, 7, 8, 9, 10 ]
