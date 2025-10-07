@@ -14,7 +14,16 @@ for (const greet of greetings) {
     // console.log(`Each char is ${greet}`);
 }
 
+// for (const greet of greetings) {
+//     if(greet == "a" || greet == " ")
+//         {
+//             continue;
+//         }    
+//             console.log(greet);
+// }
 
+
+//--Maps is a data type & it's same as array 
 //#. Maps:-  -- object
 //--unique value, insertion order, iterable
 
