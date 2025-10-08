@@ -42,14 +42,14 @@ map.set('IN', "India")         //--no duplicate allow
 // }
 
 //----Loop on map---------
-for (const key of map) {
+for (const key of map) {        //--It gives in array form.
     // console.log(key);
 // [ 'IN', 'India' ]                 //--output
 // [ 'USA', 'United States of America' ]
 // [ 'Fr', 'France' ]
 }
 
-for (const [key, value] of map) {
+for (const [key, value] of map) {     //--destructure of array
     // console.log(key);
     //    IN              //--output
     //    USA
