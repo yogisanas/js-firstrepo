@@ -25,13 +25,14 @@ for (const greet of greetings) {
 
 //--Maps is a data type & it's same as array 
 //#. Maps:-  -- object
-//--unique value, insertion order, iterable
+//--key-value pair, unique value(no duplicate allow), insertion order, iterable
+//--There are many methods in maps like set()
 
 const map = new Map()
 map.set('IN', "India")
 map.set('USA', "United States of America")
 map.set('Fr', "France")
-map.set('IN', "India")
+map.set('IN', "India")         //--no duplicate allow
 
 // console.log(map); 
 //--Map(3) {             //--output
@@ -40,11 +41,19 @@ map.set('IN', "India")
 //   'Fr' => 'France'
 // }
 
-for (const [key, value] of map) {
+//----Loop on map---------
+for (const key of map) {
     // console.log(key);
 // [ 'IN', 'India' ]                 //--output
 // [ 'USA', 'United States of America' ]
 // [ 'Fr', 'France' ]
+}
+
+for (const [key, value] of map) {
+    // console.log(key);
+    //    IN              //--output
+    //    USA
+    //    Fr
 
 //    console.log(key, ':-', value);
 // IN :- India                      //--output
@@ -60,6 +69,6 @@ const myObject = {
     'game2' : 'Spiderman'
 }
 
-for (const [key, value] of myObject) {
-    //    console.log(key, ':-', value);      //--myObject is not iterable
-}
+// for (const [key, value] of myObject) {
+//     //    console.log(key, ':-', value);      //--myObject is not iterable
+// }
