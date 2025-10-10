@@ -22,9 +22,9 @@ for (const greet of greetings) {
 //             console.log(greet);
 // }
 
-
-//--Maps is a data type & it's same as array 
+ 
 //#. Maps:-  -- object
+//--Maps is a data type & it's same as array
 //--key-value pair, unique value(no duplicate allow), insertion order, iterable
 //--There are many methods in maps like set()
 
