@@ -63,6 +63,7 @@ for (const [key, value] of map) {     //--destructure of array
 
 
 //#. Objects:-
+//--There is another way to iterate object
 
 const myObject = {
     'game1' : 'NFS',
