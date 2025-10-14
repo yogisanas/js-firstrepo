@@ -34,7 +34,7 @@ map.set('USA', "United States of America")
 map.set('Fr', "France")
 map.set('IN', "India")         //--no duplicate allow
 
-// console.log(map); 
+// console.log(map);     //--It gives in key-value form
 //--Map(3) {             //--output
 //   'IN' => 'India',
 //   'USA' => 'United States of America',
@@ -49,7 +49,7 @@ for (const key of map) {        //--It gives in array form.
 // [ 'Fr', 'France' ]
 }
 
-for (const [key, value] of map) {     //--destructure of array
+for (const [key, value] of map) {     //--de-structure of array
     // console.log(key);
     //    IN              //--output
     //    USA
