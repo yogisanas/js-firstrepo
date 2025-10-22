@@ -3,7 +3,7 @@
 //--In foreach loop function is callback function.
 //--In callback function no need to write function name.
 
-const coding = ["js", "rb", "py", "java", "cpp"]
+const coding = ["js", "rb", "py", "java", "cpp"]    //--check console
 
 // coding.forEach( function (item) {
 //     console.log(item);
