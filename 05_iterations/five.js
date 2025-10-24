@@ -1,5 +1,5 @@
 //#. foreach:-
-//--foreach loop is already inject in array & required function.
+//--foreach loop is already inject(check console) in array & required function.
 //--In foreach loop function is callback function.
 //--In callback function no need to write function name.
 
