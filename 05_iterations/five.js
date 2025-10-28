@@ -1,6 +1,6 @@
-//#. foreach:-
+//#. foreach:- HIGH ORDER ARRAY
 //--foreach loop is already inject(check console) in array & required function.
-//--In foreach loop function is callback function.
+//--In foreach loop function is callback function. i.e. give me a function that what to do.
 //--In callback function no need to write function name.
 
 const coding = ["js", "rb", "py", "java", "cpp"]    //--check console
@@ -17,7 +17,7 @@ const coding = ["js", "rb", "py", "java", "cpp"]    //--check console
 
 //-- Arrow function:-
 
-// coding.forEach( (item) => {
+// coding.forEach( (item) => {      //--no need any name or var to store
 //     console.log(item);
 // })
 
@@ -60,3 +60,8 @@ myCoding.forEach( (item) => {
     //   java
     //   python
 })
+
+//--console.log(item);
+// { languageName: 'javascript', languageFileName: 'js' }
+// { languageName: 'java', languageFileName: 'java' }
+// { languageName: 'python', languageFileName: 'py' }
