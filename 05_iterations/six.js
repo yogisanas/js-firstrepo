@@ -17,15 +17,27 @@
 
 //#. filter:- Numbers are easy for that
 //--filter is also take callback function.
+//--filter returns a value whereas foreach doesn't return a value.
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+// myNums.filter( (item) => item > 5)       //--it just return, not print
+
 // const newNums = myNums.filter( (item) => item > 5)
+// console.log(newNums);                //--[ 6, 7, 8, 9, 10 ] --output
 
 // const newNums = myNums.filter( (item) => {
 //      return item > 5
 // })     
+//console.log(newNums);
 //--when you open scope '{}' use return keyword otherwise it gives '[]' empty array
+
+//********outside video**************/
+// const newNums = myNums.filter( (item) => {
+//      console.log(newNums);             //--Cannot access 'newNums' before initialization
+//     return item > 5 
+// })
+//********outside video**************/
 
 const newNums = []
 
