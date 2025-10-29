@@ -1,6 +1,7 @@
 // const coding = ["js", "rb", "py", "java", "cpp"]
 
-// const values = coding.forEach( (item) => {           
+// coding.forEach( (item) => { 
+// const values = coding.forEach( (item) => {     //--store in a variable     
 //     console.log(item);                      
 //        //   js          //--output
 //        //   rb
@@ -14,7 +15,8 @@
 //--not work for any operations on each value because foreach loop perform operations but not return anything
 
 
-//#. filter:-
+//#. filter:- Numbers are easy for that
+//--filter is also take callback function.
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
