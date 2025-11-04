@@ -15,6 +15,7 @@ while (arr < myArray.length) {
 }
 
 
+//--use run the loop at least one time--
 let score = 11
 
 do {
