@@ -8,7 +8,7 @@ const newNums = myNumbers.map( (item) => item + 10)
 
 // const newNums2 = []
 
-// myNumbers.filter( (item) => {
+// myNumbers.forEach( (item) => {
 // //    item = item + 10;
 //     newNums2.push(item + 10)
 // })
