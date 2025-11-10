@@ -18,6 +18,7 @@
 //#. filter:- Numbers are easy for that
 //--filter is also take callback function.
 //--filter returns a value whereas foreach doesn't return a value.
+//--filter only pass the value when the condition is true. So use only conditional operator.
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -37,6 +38,9 @@ const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 //      console.log(newNums);             //--Cannot access 'newNums' before initialization
 //     return item > 5 
 // })
+//************************************************************
+// const newNums = myNums.filter((item) => item + 10)
+// console.log(newNums);                  //--Not work
 //********outside video**************/
 
 const newNums = []
