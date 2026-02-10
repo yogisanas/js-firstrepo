@@ -33,6 +33,12 @@
             <h2>Lorem ipsum dolor sit.</h2>
         <p>Lorem ipsum dolor sit amet.</p>
         <input type="password" name="" id="">
+
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
     </div>
 </body>
 </html>
@@ -80,4 +86,13 @@
     document.querySelector('input[type="password"]')   --null
     document.querySelector('input[type="password"]')   --<input type="password" name id>
     document.querySelector('p:first-child')            --null
+
+    document.querySelector('ul')  --all ul list
+    const myul = document.querySelector('ul')
+    myul.querySelector('li')                    --<li>one</li>
+    const turnGreen = myul.querySelector('li')
+    turnGreen.style.backgroundColor = "green"
+    turnGreen.style.padding = "10px"
+    turnGreen.innerText                    --'one'
+    turnGreen.innerText = "five"
 -->
