@@ -95,4 +95,7 @@
     turnGreen.style.padding = "10px"
     turnGreen.innerText                    --'one'
     turnGreen.innerText = "five"
+
+    document.querySelectorAll('li') --NodeList(3) [li, li, li]  --its not pure array because it doesn't give map() it just a node list
+    tempLiList.style.color = 'green'   --Uncaught TypeError: Cannot set properties of undefined (setting 'color')
 -->
