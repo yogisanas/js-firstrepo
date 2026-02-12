@@ -35,9 +35,10 @@
         <input type="password" name="" id="">
 
         <ul>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
         </ul>
     </div>
 </body>
@@ -45,57 +46,69 @@
 
     
 <!-- on live server--
-    document.getElementById('title')   --<h1 id="title" class="heading">DOM Learning on chai or code</h1>
-    document.getElementById('title').id     --'title'
-    document.getElementById('title').class   --undefined
-    document.getElementById('title').className  --'heading'
-    document.getElementById('title').getAttribute   --getAttribute() { [native code] }
-    document.getElementById('title').getAttribute('id')  --'title'
-    document.getElementById('title').getAttribute('class')  --'heading'
-    document.getElementById('title').setAttribute('class', 'test')  --undefined  --overide pre. val.
-    document.getElementById('title').setAttribute('class', 'test heading')  --undefined
+    -document.getElementById('title')   --<h1 id="title" class="heading">DOM Learning on chai or code</h1>
+    -document.getElementById('title').id     --'title'
+    -document.getElementById('title').class   --undefined
+    -document.getElementById('title').className  --'heading'
+    -document.getElementById('title').getAttribute   --getAttribute() { [native code] }
+    -document.getElementById('title').getAttribute('id')  --'title'
+    -document.getElementById('title').getAttribute('class')  --'heading'
+    -document.getElementById('title').setAttribute('class', 'test')  --undefined  --overide pre. val.
+    -document.getElementById('title').setAttribute('class', 'test heading')  --undefined
 
-    const title = document.getElementById('title')
-    title   --<h1 id="title" class="heading">DOM Learning on chai or code</h1>
-    title.style.backgroundColor = 'green'
-    title.style.padding = "15px"
-    title.style.borderRadius = "15px"
+    -const title = document.getElementById('title')
+    -title   --<h1 id="title" class="heading">DOM Learning on chai or code</h1>
+    -title.style.backgroundColor = 'green'
+    -title.style.padding = "15px"
+    -title.style.borderRadius = "15px"
 
-    title  ----<h1 id="title" class="test heading" style="background-color: green; padding: 15px; 
+    -title  ----<h1 id="title" class="test heading" style="background-color: green; padding: 15px; 
                    border-radius: 15px;">DOM Learning on chai or code</h1>
-    title.textContent  --'DOM Learning on chai or code'
-    title.innerHTML    --'DOM Learning on chai or code'
-    title.innerText    --'DOM Learning on chai or code'
+    -title.textContent  --'DOM Learning on chai or code'
+    -title.innerHTML    --'DOM Learning on chai or code'
+    -title.innerText    --'DOM Learning on chai or code'
 
     --** After style="display: none;" **--
-    title.textContent  --'DOM Learning on chai or code test text'
-    title.innerText    --'DOM Learning on chai or code'
-    title.innerHTML    --'DOM Learning on chai or code <span style="display: none;">test text</span>'  --it supports HTML tags
+    -title.textContent  --'DOM Learning on chai or code test text'
+    -title.innerText    --'DOM Learning on chai or code'
+    -title.innerHTML    --'DOM Learning on chai or code <span style="display: none;">test text</span>'  --it supports HTML tags
 
-    document.getElementsByClassName('heading')  --document.getElementsByClassName('heading')  --get full HTML collection
+    -document.getElementsByClassName('heading')  --document.getElementsByClassName('heading')  --get full HTML collection
 
     --** query selectors **--
-    document.querySelector('h1')  --<h1 id="title" class="heading">DOM Learning on chai or code 
+    -document.querySelector('h1')  --<h1 id="title" class="heading">DOM Learning on chai or code 
                         <span style="display: none;">test text</span></h1>   --it gives 1st h1 tag
 
-    document.querySelector('h2')  --<h2>Lorem ipsum dolor sit.</h2>
-    document.querySelector('#title')  --<h1 id="title" class="heading">DOM Learning on chai or code 
+    -document.querySelector('h2')  --<h2>Lorem ipsum dolor sit.</h2>
+    -document.querySelector('#title')  --<h1 id="title" class="heading">DOM Learning on chai or code 
                                              <span style="display: none;">test text</span></h1>
-    document.querySelector('.heading')  --<h1 id="title" class="heading">DOM Learning on chai or code 
+    -document.querySelector('.heading')  --<h1 id="title" class="heading">DOM Learning on chai or code 
                                              <span style="display: none;">test text</span></h1>
-    document.querySelector('input[type="password"]')   --null
-    document.querySelector('input[type="password"]')   --<input type="password" name id>
-    document.querySelector('p:first-child')            --null
+    -document.querySelector('input[type="password"]')   --null
+    -document.querySelector('input[type="password"]')   --<input type="password" name id>
+    -document.querySelector('p:first-child')            --null
 
-    document.querySelector('ul')  --all ul list
-    const myul = document.querySelector('ul')
-    myul.querySelector('li')                    --<li>one</li>
-    const turnGreen = myul.querySelector('li')
-    turnGreen.style.backgroundColor = "green"
-    turnGreen.style.padding = "10px"
-    turnGreen.innerText                    --'one'
-    turnGreen.innerText = "five"
+    -document.querySelector('ul')  --all ul list
+    -const myul = document.querySelector('ul')
+    -myul.querySelector('li')                    --<li>one</li>
+    -const turnGreen = myul.querySelector('li')
+    -turnGreen.style.backgroundColor = "green"
+    -turnGreen.style.padding = "10px"
+    -turnGreen.innerText                    --'one'
+    -turnGreen.innerText = "five"
 
-    document.querySelectorAll('li') --NodeList(3) [li, li, li]  --its not pure array because it doesn't give map() it just a node list
-    tempLiList.style.color = 'green'   --Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    -document.querySelectorAll('li') --NodeList(3) [li, li, li]  --its not pure array because it doesn't give map() it just a node list
+    -tempLiList.style.color = 'green'   --Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    -const tempLiList = document.querySelectorAll('li')
+    -tempLiList
+    -tempLiList[0].style.color = 'green'
+
+    -const myH1 = document.querySelectorAll('h1')
+    -myH1
+    -myH1.style.color = 'red'   --VM267:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    -myH1[0].style.color = 'red'  --if one element is present still mention [0] 
+
+    -tempLiList.forEach(function (l) {
+          l.style.backgroundColor = 'blue'
+      })
 -->
