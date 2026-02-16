@@ -111,4 +111,25 @@
     -tempLiList.forEach(function (l) {
           l.style.backgroundColor = 'blue'
       })
+
+    -document.getElementsByClassName('list-item')   --HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+    -const tempClassList = document.getElementsByClassName('list-item')
+    -tempClassList 
+    
+    --** converting HTML Collection to Array **--
+    -Array.from(tempClassList)   --(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+    -const myConvertedArray = Array.from(tempClassList)
+    -myConvertedArray   --(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+   
+    -myConvertedArray.forEach(function (li) {
+         li.style.color = 'orange'
+      })
+
+
+    -myH2.forEach(function(h) {
+         h.style.color = 'black';
+         h.style.backgroundColor = 'green';
+         h.style.padding = '10px';
+          h.innerText = "Yogita"
+      })
 -->
