@@ -33,7 +33,21 @@
 
     parent.children[1].style.color = "orange"
 
-    console.log(parent.firstElementChild);  //--<div class="day">Monday</div>
-    console.log(parent.lastElementChild);   //--<div class="day">Thursday</div>
+    // console.log(parent.firstElementChild);  //--<div class="day">Monday</div>
+    // console.log(parent.lastElementChild);   //--<div class="day">Thursday</div>
+
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne);            //--<div class="day">Monday</div>
+    console.log(dayOne.parentElement);
+    //     <div class="parent">
+    //      <div class="day">Monday</div>
+    //      <div class="day">Tuesday</div>
+    //      <div class="day">Wednesday</div>
+    //      <div class="day">Thursday</div>
+    //    </div>
+
+    console.log(dayOne.nextElementSibling);   //--<div class="day">Tuesday</div>
+    
+    
 </script> 
 </html>
