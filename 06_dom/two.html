@@ -37,8 +37,8 @@
     // console.log(parent.lastElementChild);   //--<div class="day">Thursday</div>
 
     const dayOne = document.querySelector('.day')
-    console.log(dayOne);            //--<div class="day">Monday</div>
-    console.log(dayOne.parentElement);
+    // console.log(dayOne);            //--<div class="day">Monday</div>
+    // console.log(dayOne.parentElement);
     //     <div class="parent">
     //      <div class="day">Monday</div>
     //      <div class="day">Tuesday</div>
@@ -46,8 +46,9 @@
     //      <div class="day">Thursday</div>
     //    </div>
 
-    console.log(dayOne.nextElementSibling);   //--<div class="day">Tuesday</div>
+    // console.log(dayOne.nextElementSibling);   //--<div class="day">Tuesday</div>
     
-    
+    console.log("NODES: ", parent.childNodes);  //--NodeList(9) [text, div.day, text, div.day, text, div.day, text, div.day, text]
+    //--line break(enter) includes that's why NodeList(9)
 </script> 
 </html>
