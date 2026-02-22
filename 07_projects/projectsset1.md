@@ -32,4 +32,14 @@ buttons.forEach(function (button) {
   });
 });
 
+
+buttons.forEach(function (button){
+  button.addEventListener('click', function (e){
+    switch(e.target.id){
+      case e.target.id:
+      body.style.backgroundColor = e.target.id
+    }
+  })
+})
+
 ```
