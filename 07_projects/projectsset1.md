@@ -79,3 +79,21 @@ form.addEventListener('submit', function (e) {
 });
 
 ```
+
+## project 3 -- DigitalClock
+
+```javascript
+const clock = document.getElementById('clock');
+// const clock = document.querySelector('#clock');
+
+// let date = new Date();
+// console.log(date.toLocaleTimeString());
+
+// it controls the events of javascript..
+setInterval(function () {
+  let date = new Date();
+  // console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+
+```
