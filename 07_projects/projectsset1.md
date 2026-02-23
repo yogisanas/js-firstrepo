@@ -42,9 +42,16 @@ buttons.forEach(function (button){
   })
 })
 
+
+buttons.forEach(function (button) {
+  button.addEventListener('click', function (e) {
+    body.style.backgroundColor = e.target.id;
+  })
+})
+
 ```
 
-## project 1 -- BMICalculator
+## project 2 -- BMICalculator
 
 ```javascript
 const form = document.querySelector('form');
