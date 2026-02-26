@@ -29,6 +29,11 @@
     //-- attachEvents()   --for internet explorer
     //-- jQuery - on      --use before addEventListener
 
+     // type, timestamp, defaultPrevented
+     // target, toElement, srcElement, currentTarget
+     // clientX, clientY, screenX, screenY
+     // altkey, ctrlkey, shiftkey, keyCode
+
     //-- e -> Event object
     document.getElementById('owl').addEventListener('click', function(e){
         // alert("owl clicked again");
@@ -36,6 +41,17 @@
            //--PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
            //--PointerEvent is object
     }, false)   //--default false so no need to write false
+
+//--------------------------------------------------------------------------------------------------
+
+     document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul"); 
+    }, false)
+
+     document.getElementById('owl').addEventListener('click', function(e){
+        console.log("owl clicked");  
+    }, false)
+
 </script>
 </html>
 
