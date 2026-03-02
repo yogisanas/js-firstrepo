@@ -5,7 +5,7 @@
 //--------------------------------------(1)--------------------------------------------------------
 const promiseOne = new Promise(function(resolve, reject){
     //Do an asnyc task..
-    // DB calls, cryptography, network
+    // DB calls, cryptography, network        //--this takes time that's why use await
     setTimeout(function(){
         console.log('Async task is complete');
         resolve()
@@ -80,14 +80,41 @@ const promiseFive = new Promise(function(resolve, reject){
         if(!error) {
             resolve({username : "javascript", password : "123"})
         } else {
-            reject('ERROR : JS went wrong')
+            reject('ERROR : JS went wrong')         //--reject means error
         }
     }, 1000)
 })
 
 async function consumePromiseFive(){
-    const response = await promiseFive
-    console.log(response);
+    try {
+        const response = await promiseFive
+        console.log(response);
+    } catch(error) {
+        console.log(error);
+    }
 }
 
 consumePromiseFive();
+
+//----------------------------------------------------------------------------------------------------
+
+// async function getAllUsers(){
+//     try {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//         // console.log(response);
+//         const data = await response.json()
+//         console.log(data);
+//     } catch (error) {
+//         console.log("E: ", error);
+//     }
+// }
+
+// getAllUsers()
+
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then( (response) => {
+    return response.json()
+}).then((data) => {
+    console.log(data);
+}).catch((error) => console.log(error))
