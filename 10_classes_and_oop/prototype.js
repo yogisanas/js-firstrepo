@@ -19,7 +19,7 @@ let heroPower = {
 }
 
 //--Top level hierarchy access / add new property in object:-
-//--give power to all [array, string]
+//--give power to all [array, string] / it's a prototypal behaviour
 Object.prototype.yogita = function(){
     console.log(`yogita is present in all object`);
 }
