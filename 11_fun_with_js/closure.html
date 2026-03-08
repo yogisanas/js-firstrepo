@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #313131;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+//*********************** Lexical Scoping *************************
+ //--lexical scoping means inner function has access of outer function
+
+    // function init() {
+    //    let name = "Mozilla"; 
+    //    function displayName() {
+    //      console.log(name); 
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+    // function outer(){
+    //     let username = "yogita"
+    //     console.log(secret);      //--error
+    //     function inner(){
+    //         let secret = "my123"
+    //         console.log("inner", username);      //--inner yogita
+    //     }
+    //     function innerTwo(){
+    //         console.log("innerTwo", username);   //--innerTwo yogita
+    //         console.log(secret);                 //--error
+    //     }
+    //     inner()
+    //     innerTwo()
+    // }
+    // outer()
+    // console.log("outer", username);        //--error
+
+
+//*********** Closure *********************************
+ //--closure gives a function access to its outer scope.
+
+    function makeFunc() {
+       const name = "Mozilla";
+       function displayName() {
+         console.log(name);
+       }
+       return displayName;      //--return whole lexical scope
+    }
+
+const myFunc = makeFunc();
+myFunc();      //--Mozilla
+</script>
+
+<script>
+    // document.getElementById('orange').onclick = function(){
+    //     document.body.style.backgroundColor = "orange"
+    // }
+    // document.getElementById('green').onclick = function(){
+    //     document.body.style.backgroundColor = 'green'
+    // }
+
+    function clickHandler(color){
+        // document.body.style.backgroundColor = `${color}`
+
+        return function(){
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+
+    document.getElementById('orange').onclick = clickHandler("orange")
+    document.getElementById('green').onclick = clickHandler("green")
+</script>
+</html>
