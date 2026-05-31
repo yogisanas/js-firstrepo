@@ -1,6 +1,7 @@
 "use strict";  //--treat all JS code as newer version or newer JS
 
 //alert(3+3);   //--we are using nodejs, not browser
+//--there is different syntax to use alert in nodejs
 
 console.log(3 
     +
@@ -11,7 +12,11 @@ let name = "yogita"
 let age = 18
 let isLoggedIn = false
 let state;         //--undefined
-let state1 = "";  //--null
+let state1 = "";  //--" "
+let state2 = null;  //--empty
+
+// console.log("state is: ",state1);
+
 
 // ----primitive_datatypes-------
 // -number = 2 to power 53
@@ -19,12 +24,12 @@ let state1 = "";  //--null
 // -string = ""
 // -boolean  = truse/false
 // -null = standalone value
-// -undefined = declared but not initialize
-// -symbol = unique
-
+// -undefined = declared but not initialize / there is no value assign
+// -symbol = unique / for react to find uniqueness
 
 // -object
 
-console.log(typeof undefined);     //--undefined
+console.log(typeof age);
+console.log(typeof "yogita");
+console.log(typeof undefined);     //--undefined type
 console.log(typeof null);         //--object
-
