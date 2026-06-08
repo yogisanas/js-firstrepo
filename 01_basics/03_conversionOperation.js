@@ -37,12 +37,12 @@ let stringNumber = String(someNumber)
 
 let value = 3
 let negValue = -value
-// console.log(negValue);
+// console.log(negValue);   -3
 
 // console.log(2+2);
 // console.log(2-2);
 // console.log(2*2);
-// console.log(2**2);
+// console.log(2**2);  power
 // console.log(2/2);
 // console.log(2%2);
 
@@ -50,25 +50,26 @@ let str1 = "hello"
 let str2 = " yogita"
 
 let str3 = str1 + str2
-// console.log(str3);
+// console.log(str3);      hello yogita
 
-// console.log("1" + 2);
-// console.log(1 + "2");
-// console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
+// console.log("1" + 2);        12
+// console.log(1 + "2");        12
+// console.log("1" + 2 + 2);    122
+// console.log(1 + 2 + "2");    32
 
 // console.log( (3 + 4) * 5 % 3);   //--use paranthesis
 
-console.log(+true);
-console.log(+"");
+console.log(+true);     //--1
+// console.log(true+);   --ERROR
+console.log(+"");       //--0
 
 let num1, num2, num3
 
-num1 = num2 = num3 = 2 + 2
+num1 = num2 = num3 = 2 + 2  //--4   --not good
 
 let gameCounter = 100
-// gameCounter++;
-++gameCounter;
+// gameCounter++;       101
+++gameCounter;      //--101
 console.log(gameCounter);
 
-
+//--IMP - learn from mdn
