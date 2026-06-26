@@ -118,3 +118,41 @@ fetch('https://jsonplaceholder.typicode.com/users')
 }).then((data) => {
     console.log(data);
 }).catch((error) => console.log(error))
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+const p1 = new Promise((resolve) => {
+    setTimeout(() => resolve("Promise 1 resolved"), 1000);
+});
+
+const p2 = new Promise((_, reject) => {
+    setTimeout(() => reject("Promise 2 rejected"), 1500);
+});
+
+const p3 = new Promise((resolve) => {
+    setTimeout(() => resolve("Promise 3 is resolved"), 2000);
+});
+
+
+Promise.all([p1, p2, p3])
+.then((res) => {
+    console.log("Result: ", res);
+})
+.catch((err) => {
+    console.log("Error: ", err);
+})
+
+
+// output:-
+//  p1 -> resolved
+//  p2 -> rejected
+//  p3 -> resolved (ignored)
+
+// What does Promise.all() do?
+
+// Promise.all() takes an array of promises and returns a single promise. It resolves only when all 
+// input promises resolve, returning an array of their results in the same order. If any one promise 
+// rejects, it immediately rejects with that error, and the remaining results are ignored, even though 
+// those promises continue executing in the background.
