@@ -9,12 +9,12 @@
 
 // 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt 
 
-
+//--number
 const score = 100
 const scoreValue = 100.3
 
 const isLoggedIn = false
-const outsideTemp = null
+const outsideTemp = null      //--object
 let userEmail;
 
 const id = Symbol('123')
@@ -27,7 +27,7 @@ const bigNumber = 5567987234569876656n
 //#. Non-Primitive / Reference Type (call by reference)   --reference
 
 // Array, Objects, Functions
-
+//--All non-primitive datatype is object
 
 const colour = ["red", "blue", "pink"]
 
@@ -36,13 +36,14 @@ let myObj = {
     age: 25
 }
 
+//--object function
 const myFunction = function(){
     console.log("Hello..");
     
 }
 
 
-// console.log(typeof bigNumber);
+// console.log(typeof bigNumber);    --bigint
 
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
