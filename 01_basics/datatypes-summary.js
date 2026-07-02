@@ -52,11 +52,11 @@ const myFunction = function(){
 
 let myName = "yogitasanas"
 
-let anothername = myName
+let anothername = myName     //--gives copy of myName
 anothername = "hello..."
 
-console.log(anothername);
-console.log(myName);
+console.log(anothername);    //--hello...
+console.log(myName);         //--yogitasanas
 
 
 let userOne = {
@@ -68,7 +68,7 @@ let userTwo = userOne
 
 userTwo.email = "riya@gmail.com"
 
-console.log(userOne.email);
-console.log(userTwo.email);
+console.log(userOne.email);    //--riya@gmail.com
+console.log(userTwo.email);    //--riya@gmail.com
 
 
