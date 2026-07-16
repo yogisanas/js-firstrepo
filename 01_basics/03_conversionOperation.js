@@ -66,14 +66,18 @@ let str3 = str1 + str2
 
 // console.log( (3 + 4) * 5 % 3);   //--use paranthesis
 
+
+console.log(true);      //true
 console.log(+true);     //--1
-// console.log(true+);   --ERROR
+// console.log(true+);   --ERROR  not allowed
 console.log(+"");       //--0
 
-let num1, num2, num3
 
+let num1, num2, num3
 num1 = num2 = num3 = 2 + 2  //--4   --not good
 
+
+//-- prefix & postfix:-- mdn
 let gameCounter = 100
 // gameCounter++;       101
 ++gameCounter;      //--101
