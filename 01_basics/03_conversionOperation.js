@@ -1,8 +1,11 @@
+//--Number:-
+// let score = 33         --converted
+// let score = "33"       --converted
 // let score = "33abc"        --NaN
 // let score = null           --0
 // let score = undefined      --NaN
 // let score = true           --1
-let score = "yogita"       //--NaN
+// let score = "yogita"       //--NaN
 
 // console.log(typeof score);
 // console.log(typeof(score));    --method
@@ -18,6 +21,8 @@ let valueInNumber = Number(score);
 // "33abc" = NaN
 //true = 1; false = 0
 
+
+//--Boolean:----------------------------------------------
 let isLoggedIn = "yogii"
 
 let booleanIsLoggedIn = Boolean(isLoggedIn)
@@ -27,6 +32,8 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 // "" = false
 // "yogi" = true
 
+
+//--String:--------------------------------------------------
 let someNumber = 33
 
 let stringNumber = String(someNumber)
