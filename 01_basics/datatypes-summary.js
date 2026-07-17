@@ -15,7 +15,7 @@ const scoreValue = 100.3
 
 const isLoggedIn = false
 const outsideTemp = null      //--object
-let userEmail;
+let userEmail;   // = undefined
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
@@ -39,7 +39,6 @@ let myObj = {
 //--object function
 const myFunction = function(){
     console.log("Hello..");
-    
 }
 
 
