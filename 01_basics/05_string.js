@@ -26,9 +26,9 @@ console.log(anotherString);   //--gi
 
 const newStringOne = "  yogita   "
 console.log(newStringOne);          //--  yogita 
-console.log(newStringOne.trim());   //--yogita     --can use start & end
+console.log(newStringOne.trim());   //--yogita     --can use start & end  for space
 
-//--browser doesn't know spaces it convert into %20
+//--browser doesn't know spaces it convert into %20  in URN-code
 const url = "https://yogita.com/yogita%20sanas"
 
 console.log(url.replace('%20', '-'))   //--https://yogita.com/yogita-sanas
