@@ -1,3 +1,5 @@
+//-- 1 Jan 1970
+
 //--Date is a object
 //--Temporal api for date  -- global object like Math in future
 
@@ -20,20 +22,24 @@ let myCreatedDate = new Date(2025, 0 , 24)      //--months starts from 0 in js
 let myCreatedDate2 = new Date(2025, 0 , 24, 5, 8)      
 // console.log(myCreatedDate2.toLocaleString());     //--1/24/2025, 5:08:00 AM
 
-let myCreatedDate3 = new Date("01-23-2025")      
+let myCreatedDate3 = new Date("01-23-2025")            //--mm-dd-yy  --In india follow this
 // console.log(myCreatedDate3.toLocaleDateString());   //--1/23/2025
 
+let myCreatedDate4 = new Date("2025-01-14")      //--yy-mm-dd
+// console.log(myCreatedDate3.toLocaleString());    //--1/23/2025, 12:00:00 AM
 
-let myTimeStamp = Date.now()
 
-// console.log(myTimeStamp);
-// console.log(myCreatedDate3.getTime());
-// console.log(Math.floor(Date.now()/1000));
+let myTimeStamp = Date.now()    //--exact time   -game, poles(fastest)
+
+// console.log(myTimeStamp);              //--1784925526782     --milliseconds
+// console.log(myCreatedDate3.getTime());  //--1737590400000    --compare date into milliseconds
+// console.log(Math.floor(Date.now()/1000));  //--1784925526    --convert milliseconds to seconds
 
 let newDate = new Date()
-// console.log(newDate);
-// console.log(newDate.getMonth() + 1);
-// console.log(newDate.getDay());
+// console.log(newDate);                 //--2026-07-24T20:57:35.835Z
+// console.log(newDate.getMonth());      //--6
+// console.log(newDate.getMonth() + 1);  //--7
+// console.log(newDate.getDay());        //--5
 
 // `${newDate.getDate()} and the time `
 
