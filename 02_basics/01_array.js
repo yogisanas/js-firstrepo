@@ -1,4 +1,4 @@
-//--Array
+//--Array  --collection of multiple items under a single variable name
 //  --it can be different type elements also
 //  --Theory in mdn documentation - (Must Read)
 //  --shallow copy - Heap / original reference
