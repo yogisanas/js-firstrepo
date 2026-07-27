@@ -6,20 +6,27 @@ const fruit = ["apple", "mango", "orange"]
 // console.log(colour);        //--[ 'pink', 'red', 'blue', [ 'apple', 'mango', 'orange' ] ]
 // console.log(colour[3][1]);    //--It takes 2nd array as a single element.
 
+
 // const newArr = colour.concat(fruit)   //--It gives new array
 // console.log(newArr);      //--[ 'pink', 'red', 'blue', 'apple', 'mango', 'orange' ]  
 
-// const all_new_arr = [...colour, ...fruit]    //--here we can add 1 more array
+
+//-- Spread Operator-----
+// const all_new_arr = [...colour, ...fruit]    //--prefer because here we can add 1 more array
 // console.log(all_new_arr);        //--[ 'pink', 'red', 'blue', 'apple', 'mango', 'orange' ]
 
 // const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
 // const real_another_array = another_array.flat(Infinity)
 // console.log(real_another_array);
+// [
+//   1, 2, 3, 4, 5,
+//   6, 7, 6, 7, 4,
+//   5
+// ]
 
 
-
-console.log(Array.isArray("yogita"));    //--false
-console.log(Array.from("yogita"));      //--[ 'y', 'o', 'g', 'i', 't', 'a' ]
+console.log(Array.isArray("yogita"));    //--false    --is this array or not?
+console.log(Array.from("yogita"));      //--[ 'y', 'o', 'g', 'i', 't', 'a' ]  --convert into array
 console.log(Array.from({name: "yogita"}));   //--[]  -gets confused between keys & values 
 
 
