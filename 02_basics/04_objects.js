@@ -88,11 +88,11 @@ const course = {
 
 const {courseInstructor : instructor} = course
 
-// console.log(courseInstructor);
-console.log(instructor);
+// console.log(courseInstructor);   //--yogita
+console.log(instructor);         //--yogita
 
 
-//---React----------------
+//---React---------------- de-structure (props.company)
 
 // const navbar = ({company}) => {
 
@@ -101,9 +101,9 @@ console.log(instructor);
 // navbar(company = "yogita")
 
 
-//----api-------------------
+//----api------------------- 
 
-//--json response:- object response
+//--json response:- object response / json structure
 
 // {
 //     "name" : "yogita",
