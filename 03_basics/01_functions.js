@@ -1,4 +1,3 @@
-
 function sayMyName(){
     console.log("Y");
     console.log("O");
@@ -8,7 +7,8 @@ function sayMyName(){
     console.log("A");
 }
 
-// sayMyName()
+// sayMyName     --reference
+// sayMyName()   --execution
 
 function addTwoNumbers(num1, num2){
     console.log(num1 + num2);
@@ -22,9 +22,9 @@ function addTwoNumbers(num1, num2){
 
 // const result = addTwoNumbers(10, 10)    //--20
 // console.log("Result: ", result);      //--Result:  undefined
-//--cannot store result in variable because that function is not return anything..
+//--cannot store result in variable because that function is not return anything..  --IMP
 
-
+//--var store only return value not log   --IMP
 function subTwoNumbers(num1, num2){
     let result = num1 - num2
     // console.log("yogii");   
