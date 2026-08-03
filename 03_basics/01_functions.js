@@ -56,7 +56,7 @@ function calculateCartPrice(num1){
 
 console.log(calculateCartPrice(2));      //--2
 
-
+//-- for multiple value
 function calculateAllCartPrice(...num2){      //--rest operator --combine everything
     return num2
 }
@@ -87,7 +87,7 @@ handleObject({          //--Username is sam and price is 399
     username: "sam",
     price: 399
 })
-
+//-- if key not match then it gives undefined
 
 //-------------Array--------------------------------------------------------------
 
