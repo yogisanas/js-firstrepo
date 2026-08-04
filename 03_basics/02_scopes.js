@@ -1,8 +1,8 @@
 // var c = 300      //--now the value of c is 30 because of override
-let a = 300      //--global variable
+let a = 300      //--global variable / global scope
 
 if(true){
-   let a = 10     //--local variable
+   let a = 10     //--local variable / block scope
    const b = 20
    var c = 30    //--c = 30
 
@@ -15,6 +15,9 @@ if(true){
 
 // console.log(a);     //--300
 
+//--IMP - inspect scope & node scope are different
+
+//--------------------------------------------------------------------------------------------------
 
 function one(){
    const username = "yogita"
