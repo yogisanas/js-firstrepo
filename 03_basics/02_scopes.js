@@ -24,7 +24,7 @@ function one(){
 
    function two(){
       const website = "youtube"
-      console.log(username);
+      console.log(username);      //--yogita
    }
    // console.log(website);      //--website is not defined
    
@@ -38,7 +38,7 @@ if(true){
    const username = "yogita"
    if (username === "yogita") {
       const website = " youtube"
-      // console.log(username + website);
+      // console.log(username + website);    //--yogita youtube
    }
    // console.log(website);      //--website is not defined
 }
@@ -47,7 +47,7 @@ if(true){
 
 
 
-// ************************ Interesting *******************************************
+// ************************ Interesting / hoisting *******************************************
 
 console.log(addOne(5));     //--6
 
@@ -57,8 +57,10 @@ function addOne(num){
 
 addOne(5)
 
+//---------------------
+
 addTwo(5)          //--Cannot access 'addTwo' before initialization
-const addTwo = function(num){
+const addTwo = function(num){         //--can call expression
    return num + 2
 }
 
