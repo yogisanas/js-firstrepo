@@ -34,11 +34,11 @@ const user = {                //--current context   --inside scope
 //--IMP - In browser global object is window object
 
 
-// ************************* Arrow Function *************************************
+// ************************* this in function *************************************
 
 // function chai(){
 //     let username = "yogita"
-//     console.log(this);             //--object
+//     console.log(this);             //--object in node
 //     console.log(this.username);      //--undefined
 // }
 
@@ -50,7 +50,7 @@ const user = {                //--current context   --inside scope
 //     console.log(this.username);     //--undefined
 // }
 
-// *****************************************************************************************
+// *************************** Arrow Function ******************************************
 
 // () => {}       //--syntax of arrow function
 
@@ -79,15 +79,18 @@ const chai = () => {
 //--{} --return keyword is required.
 //--() --no need to write return keyword.
 
-// const addTwo = (num1, num2) =>  num1 + num2         //--2
+// const addTwo = (num1, num2) =>  num1 + num2         //--4
 
 // const addTwo = (num1, num2) =>  ( num1 + num2 )       //--4
 
 // const addTwo = (num1, num2) =>  {username: "yogita"}    //--undefined
 
+console.log(addTwo(2, 2));    //--4
+
+
+//-- how to return object
 const addTwo = (num1, num2) =>  ({username: "yogita"})    //--{ username: 'yogita' }
 
-console.log(addTwo(2, 2));    //--4
 
 //--Ex.------
 // const myArray = [1, 2, 3, 4, 5]
