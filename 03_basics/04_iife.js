@@ -1,7 +1,8 @@
 //*** Immediately Invoked Function Expressions (IIFE) **************************
 //--Two reasons that we need IIFE.
-//--1. Don't want global pollution.
-//--2. Immediately invoked function.
+//--1. Don't want global pollution. / global variable don't enter in function - local scope
+//--2. Immediately invoked function. / Database connection
+//--3. 1st() - code / Implicit scope , 2nd() - execution call
 
 //--Named IIFE------------------
 (function chai(){
