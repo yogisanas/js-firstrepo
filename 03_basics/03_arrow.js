@@ -83,12 +83,11 @@ const chai = () => {
 
 // const addTwo = (num1, num2) =>  ( num1 + num2 )       //--4
 
-// const addTwo = (num1, num2) =>  {username: "yogita"}    //--undefined
-
 console.log(addTwo(2, 2));    //--4
 
 
-//-- how to return object
+//-- how to return object:-
+// const addTwo = (num1, num2) =>  {username: "yogita"}    //--undefined
 const addTwo = (num1, num2) =>  ({username: "yogita"})    //--{ username: 'yogita' }
 
 
