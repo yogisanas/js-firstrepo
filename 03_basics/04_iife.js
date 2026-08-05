@@ -17,3 +17,9 @@
     console.log(`DB CONNECTED TWO ${name}`);
 })('yogita')
 
+
+
+// IIFE stands for Immediately Invoked Function Expression. 
+// It is a function that is defined and executed immediately. 
+// It is mainly used to create a private scope and avoid polluting the global scope.
+
