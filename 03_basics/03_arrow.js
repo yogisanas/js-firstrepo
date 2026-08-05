@@ -31,6 +31,8 @@ const user = {                //--current context   --inside scope
 
 // console.log(this);    //--{}   --because of node environment
 
+//--IMP - In browser global object is window object
+
 
 // ************************* Arrow Function *************************************
 
