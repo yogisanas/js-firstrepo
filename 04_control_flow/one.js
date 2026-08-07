@@ -1,17 +1,18 @@
-//-- if
-//  <, >, <=, >=, ==, !=, ===, !==(strict checking)
+// ******* if ******************************************************************************
+//  <, >, <=, >=, ==, !=, [===, !==(strict checking)]
 
-// const isUserLoggedIn = true
+// const isUserLoggedIn = true      --if(isUserLoggedIn){}
 // const temperature = 41
 
 // if(temperature < 50){
 //     console.log("Less than 50");
 // }    
 // else{
-//     console.log("Greater thn 50");
+//     console.log("Greater than 50");
 // }
 
 
+// ******* SCOPE ******************************************************************************
 // const score = 200
 
 // if(score >  100){
@@ -29,7 +30,7 @@
 
 // if(balance > 500) console.log("Test");          //--for one line
 
-// if(balance > 500) console.log("Test"),      //--for multiple line / not good
+// if(balance > 500) console.log("Test"), log()     //--for multiple line / not good
 // console.log("Test2");                
 
 
@@ -50,12 +51,14 @@
 
 const userLoggedIn = true
 const debitCard = true
-const loggedInFromGoogle = false
-const loggedInFromEmail = true
 
 if (userLoggedIn && debitCard && 2==2) {
     console.log("Allow to buy course");
 }
+
+
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
 
 if (loggedInFromGoogle || loggedInFromEmail) {
     console.log("User logged in");
