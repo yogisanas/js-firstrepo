@@ -27,7 +27,7 @@ switch (month) {
 
 //------------------------------------------------------------------------------------------------------
 
-const char = 'A'          //--It's: A
+const char = 'A'          //--It's: A   --case sensitive
 
 switch (char) {
     case 'a':
