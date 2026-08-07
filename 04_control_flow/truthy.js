@@ -1,4 +1,4 @@
-//--"y@yogita.ai"  --> assume that value is true because it's present.
+//--"y@yogita.ai"  --> assume that value is true because it's present, that is truthy value.
 //--""  --> assume that value is false because it's empty
 //--[]  --> true
 
@@ -12,39 +12,40 @@ if (userEmail) {
 }
 
 
-//--falsy values--
+//--falsy values:-
 
-//-- false, 0, -0, BigInt-0n, "", null, undefined, NaN
+//-- false, 0, -0, BigInt 0n, "", null, undefined, NaN
 
 
-//--truthy values--
+//--truthy values:-
 
 //-- "0", 'false', " ", [], {}, function(){} --empty function
 
-//--For Array
+//--For Array is empty
 if (userEmail.length === 0) {
     console.log("Array is empty");
 }
 
-//--For Object
+//--For Object is empty
 const emptyObj = {} 
 
-if (Object.keys(emptyObj).length === 0) {
+if (Object.keys(emptyObj).length === 0) {    //--gives array of keys
     console.log("Object is empty");
 }
 
 //--On browse
 // false == 0
-// true
+//- true
 
 // false == ''
-// true
+//- true
 
 // 0 == ''
-// true
+//- true
 
+//------------------------------------------------------------------------------------------
 
-//-- Nullish Coalescing Operator (??): null undefined
+//-- Nullish Coalescing Operator (??): for - null, undefined
 //-- for database response
 
 let val1;
@@ -55,6 +56,7 @@ val1 = null ?? 10 ?? 20   //--10
 
 console.log(val1);
 
+//-----------------------------------------------------------------------------------------------
 
 //-- Ternary Operator
 
