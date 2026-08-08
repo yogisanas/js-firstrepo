@@ -11,6 +11,8 @@ for (let i = 0; i <= 10; i++) {
 // console.log(element);      //--element is not defined
 
 
+//-- Nested ----------------------------------------------------------------------------------
+
 for (let i = 1; i <= 10; i++) {
     // console.log(`Outer loop value ${i}`);
     for (let j = 1; j <= 10; j++) {
@@ -34,7 +36,7 @@ for (let index = 0; index < myArray.length; index++) {
 }
 
 
-//-- break and continue
+//-- break and continue -----------------------------------------------------------------
 
 for (let i = 0; i <= 20; i++) {
     if(i == 5)

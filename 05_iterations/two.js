@@ -1,3 +1,4 @@
+//-- while
 
 let index = 0
 while (index <= 10) {
@@ -15,7 +16,9 @@ while (arr < myArray.length) {
 }
 
 
+//-- do while -------------------------------------------------------------------------------
 //--use run the loop at least one time--
+
 let score = 11
 
 do {
