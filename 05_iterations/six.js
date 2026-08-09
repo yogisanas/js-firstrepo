@@ -12,7 +12,8 @@
 // })
 
 // console.log(values);     //--undefined
-//--not work for any operations on each value because foreach loop perform operations but not return anything
+//--not work for any operations on each value because foreach loop perform operations but not return 
+// anything
 
 
 //#. filter:- Numbers are easy for that
