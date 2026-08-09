@@ -23,7 +23,7 @@ for (const greet of greetings) {
 // }
 
  
-//#. Maps:-  -- object
+//#. Maps:-  -- object  --collection of key-value pair
 //--Maps is a data type & it's same as array
 //--key-value pair, unique value(no duplicate allow), insertion order, iterable
 //--There are many methods in maps like set()
