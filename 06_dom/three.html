@@ -15,13 +15,13 @@
     // div.id = "myId"         //--<div class="main" id="myId"></div>
     div.id = Math.random() * 10    //--<div class="main" id="0.21658143266333962 / 4.521529640189246"></div>
     div.id = Math.round(Math.random() * 10 + 1)   //--<div class="main" id="4"></div>
-    div.setAttribute("title", "generated title")  //--prefer this more 
+    div.setAttribute("title", "generated title")  //--prefer this more, saves one round trip, optimize
     div.style.backgroundColor = "green"
     div.style.padding = "12px"
     // div.innerText = "chai aur code"
     const addText = document.createTextNode("chai aur code")
     div.appendChild(addText);
 
-    document.body.appendChild(div)
+    document.body.appendChild(div)      //--attach to body
 </script>
 </html>
