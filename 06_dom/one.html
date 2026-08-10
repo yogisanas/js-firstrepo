@@ -74,7 +74,7 @@
     -title.innerText    --'DOM Learning on chai or code'
     -title.innerHTML    --'DOM Learning on chai or code <span style="display: none;">test text</span>'  --it supports/gives HTML tags
 
-    -document.getElementsByClassName('heading')  --document.getElementsByClassName('heading')  --get full HTML collection
+    -document.getElementsByClassName('heading')    --get full HTML collection
 
     --** query selectors **--
     -document.querySelector('h1')  --<h1 id="title" class="heading">DOM Learning on chai or code 
@@ -90,18 +90,18 @@
     -document.querySelector('p:first-child')            --null
 
     -document.querySelector('ul')  --all ul list
-    -const myul = document.querySelector('ul')
+    -const myul = document.querySelector('ul')  --all ul list store in myul
     -myul.querySelector('li')                    --<li>one</li>
-    -const turnGreen = myul.querySelector('li')
+    -const turnGreen = myul.querySelector('li')  --1st li store in turnGreen
     -turnGreen.style.backgroundColor = "green"
     -turnGreen.style.padding = "10px"
     -turnGreen.innerText                    --'one'
     -turnGreen.innerText = "five"
 
     -document.querySelectorAll('li') --NodeList(3) [li, li, li]  --its not pure array because it doesn't give map() it just a node list
-    -tempLiList.style.color = 'green'   --Uncaught TypeError: Cannot set properties of undefined (setting 'color')
     -const tempLiList = document.querySelectorAll('li')
     -tempLiList
+    -tempLiList.style.color = 'green'   --Uncaught TypeError: Cannot set properties of undefined (setting 'color')
     -tempLiList[0].style.color = 'green'
 
     -const myH1 = document.querySelectorAll('h1')
@@ -117,7 +117,7 @@
     -const tempClassList = document.getElementsByClassName('list-item')
     -tempClassList 
     
-    --** converting HTML Collection to Array **--
+    --** converting HTML Collection to Array **-- to use any loop
     -Array.from(tempClassList)   --(4) [li.list-item, li.list-item, li.list-item, li.list-item]
     -const myConvertedArray = Array.from(tempClassList)
     -myConvertedArray   --(4) [li.list-item, li.list-item, li.list-item, li.list-item]
@@ -127,6 +127,7 @@
       })
 
 
+      --** wikipedia **--
     -myH2.forEach(function(h) {
          h.style.color = 'black';
          h.style.backgroundColor = 'green';
