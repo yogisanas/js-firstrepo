@@ -46,6 +46,7 @@
 
     
 <!-- on live server--
+    -selects whole element--
     -document.getElementById('title')   --<h1 id="title" class="heading">DOM Learning on chai or code</h1>
     -document.getElementById('title').id     --'title'
     -document.getElementById('title').class   --undefined
@@ -54,7 +55,7 @@
     -document.getElementById('title').getAttribute('id')  --'title'
     -document.getElementById('title').getAttribute('class')  --'heading'
     -document.getElementById('title').setAttribute('class', 'test')  --undefined  --overide pre. val.
-    -document.getElementById('title').setAttribute('class', 'test heading')  --undefined
+    -document.getElementById('title').setAttribute('class', 'test heading')  --undefined -overide
 
     -const title = document.getElementById('title')
     -title   --<h1 id="title" class="heading">DOM Learning on chai or code</h1>
@@ -68,10 +69,10 @@
     -title.innerHTML    --'DOM Learning on chai or code'
     -title.innerText    --'DOM Learning on chai or code'
 
-    --** After style="display: none;" **--
+    --** After style="display: none;" **-- take content
     -title.textContent  --'DOM Learning on chai or code test text'
     -title.innerText    --'DOM Learning on chai or code'
-    -title.innerHTML    --'DOM Learning on chai or code <span style="display: none;">test text</span>'  --it supports HTML tags
+    -title.innerHTML    --'DOM Learning on chai or code <span style="display: none;">test text</span>'  --it supports/gives HTML tags
 
     -document.getElementsByClassName('heading')  --document.getElementsByClassName('heading')  --get full HTML collection
 
