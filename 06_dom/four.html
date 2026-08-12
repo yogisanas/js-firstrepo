@@ -11,14 +11,15 @@
     </ul>
 </body>
 <script>
-    function addLanguage(langName){
+    function addLanguage(langName){                    //--traverse whole tree
         const li = document.createElement('li')
         li.innerHTML = `${langName}`
-        document.querySelector('.language').appendChild(li)
+        document.querySelector('.language').appendChild(li)    //--no need to store in var
     }
     addLanguage("Python")
     addLanguage("Typescript")
 
+    //--Optimize way--
     function addOptiLanGuage(langName){
         const li = document.createElement('li')
         li.appendChild(document.createTextNode(langName))

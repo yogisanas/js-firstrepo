@@ -18,8 +18,8 @@
     div.setAttribute("title", "generated title")  //--prefer this more, saves one round trip, optimize
     div.style.backgroundColor = "green"
     div.style.padding = "12px"
-    // div.innerText = "chai aur code"
-    const addText = document.createTextNode("chai aur code")
+    // div.innerText = "chai aur code"                          //--traverse tree    
+    const addText = document.createTextNode("chai aur code")    //--optimize
     div.appendChild(addText);
 
     document.body.appendChild(div)      //--attach to body
