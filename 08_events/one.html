@@ -1,5 +1,8 @@
-<!-- 1. Browser Events
+<!-- Types of Events:-
+     1. Browser Events
      2. Environments Events -->
+
+<!-- Js is a sequentially run language -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,19 +25,23 @@
    </div>
 </body>
 <script>
+    // onclick="alert('owl')"   --usually avoid in js, but used in React because has diff liabrary
+
     // document.getElementById('owl').onclick = function(){     --it has less features
     //     alert("owl clicked");
     // }
 
     //-- attachEvents()   --for internet explorer
-    //-- jQuery - on      --use before addEventListener
+    //-- jQuery - on  event listener    --use before addEventListener
 
-     // type, timestamp, defaultPrevented
-     // target, toElement, srcElement, currentTarget
-     // clientX, clientY, screenX, screenY
-     // altkey, ctrlkey, shiftkey, keyCode
+    //  Learn Events:-
+    //  type, timestamp, defaultPrevented
+    //  target, toElement, srcElement, currentTarget
+    //  clientX, clientY, screenX, screenY       --Interview      
+    //  altkey, ctrlkey, shiftkey, keyCode
 
-    //-- e -> Event object
+    //-- e -> is a Event object, function run without e also
+    
     // document.getElementById('owl').addEventListener('click', function(e){
     //     // alert("owl clicked again");
     //     console.log(e);  
@@ -80,8 +87,6 @@
 </script>
 </html>
 
-
-<!-- onclick="alert('owl')"    --usually avoid in js -->
 
 <!-- In bubbling --        false
     owl clicked
