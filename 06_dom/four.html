@@ -19,7 +19,7 @@
     addLanguage("Python")
     addLanguage("Typescript")
 
-    //--Optimize way--
+    //--Optimize way-- appendChild wants 'DOM' element not string
     function addOptiLanGuage(langName){
         const li = document.createElement('li')
         li.appendChild(document.createTextNode(langName))
@@ -31,7 +31,7 @@
     const secondLang = document.querySelector("li:nth-child(2)")
     console.log(secondLang);  
     // secondLang.innerHTML = "Mojo"
-    const newli = document.createElement('li')
+    const newli = document.createElement('li')   //--create new element & replace with 2nd element
     newli.textContent = "Mojo"
     secondLang.replaceWith(newli)
 
