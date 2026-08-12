@@ -57,12 +57,20 @@
 
     //  document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");  
-    //     e.stopPropagation();
+    //     e.stopPropagation();     --owl clicked
     // }, false)
-
+                   
+             /*  In bubbling --        false
+               owl clicked
+               clicked inside the ul
+           
+               In capturing --       true
+               clicked inside the ul
+               owl clicked   */
+                   
 
     // document.getElementById('google').addEventListener('click', function(e){
-    //     e.preventDefault();
+    //     e.preventDefault();   --no navigation
     //     e.stopPropagation();
     //     console.log('google clicked');
     // }, false)
@@ -76,9 +84,12 @@
     //     // removeIt.parentNode.removeChild(removeIt);
     // })
 
+    //--** Event Spillover **--
+
     document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.tagName);
+        console.log(e.target.tagName);    //--IMG
         if(e.target.tagName === 'IMG') {
+            console.log(e.target.id);
             let removeIt = e.target.parentNode;
         removeIt.remove();
         }
@@ -86,12 +97,3 @@
 
 </script>
 </html>
-
-
-<!-- In bubbling --        false
-    owl clicked
-    clicked inside the ul -->
-
-<!-- In capturing --       true
-    clicked inside the ul
-    owl clicked   -->
