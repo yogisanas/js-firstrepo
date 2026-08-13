@@ -10,8 +10,8 @@
     <button id="stop">Stop</button>
 </body>
 <script>
-    //--1.
-    setTimeout(function(){
+    //--1.  gives from browser not a core js part
+    setTimeout(function(){     //--handler which has no name
         console.log("Yogita..");
     }, 2000)
 
@@ -19,8 +19,9 @@
     const sayYogita = function(){
         console.log("Yogita..");
     }
-    setTimeout(sayYogita, 2000)
+    setTimeout(sayYogita, 2000)  //--reference in setTimeout()
 //-----------------------------------------------------------------------------
+//--change <h1> value
 
     // document.querySelector('h1').innerHTML = "best JS series";
 
@@ -33,7 +34,7 @@
 
 const changeMe = setTimeout(changeText, 2000);
 
-// clearTimeout(changeMe)
+// clearTimeout(changeMe)   --need reference
 
 document.querySelector('#stop').addEventListener('click', function(){
     clearTimeout(changeMe);
