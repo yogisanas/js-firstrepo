@@ -206,12 +206,12 @@ window.addEventListener('keydown', (e) => {
   <div class='color'>
   <table>
   <tr>
-    <td>Key</td>
-    <td>$KeyCode</td>
-    <td>Code</td>
+    <th>Key</th>
+    <th>$KeyCode</th>
+    <th>Code</th>
   </tr>
   <tr>
-    <td>${e.key === ' ' ? 'Space' : e.key}</td>
+    <td>${e.key === ' ' ? 'Space' : e.key}</td>   //--check for 'space'
     <td>${e.keyCode}</td>
     <td>${e.code}</td>
   </tr>
