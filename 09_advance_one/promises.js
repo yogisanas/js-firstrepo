@@ -61,7 +61,7 @@ const promiseFour = new Promise(function(resolve, reject){
     }, 1000)
 })
 
-//--chaining
+//--chaining   --used in a database connection  --then call line by line
 
 promiseFour
 .then( (user) => {
@@ -98,6 +98,7 @@ async function consumePromiseFive(){
 consumePromiseFive();
 
 //----------------------------------------------------------------------------------------------------
+//--fetch() - gives promise as response
 
 // async function getAllUsers(){
 //     try {
