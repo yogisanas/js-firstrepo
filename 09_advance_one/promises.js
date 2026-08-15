@@ -1,8 +1,9 @@
 //--The Promise object represents the eventual completion (or failure) of an asynchronous operation 
 //         and its resulting value.
 
-//-- How to make promise?
 //--------------------------------------(1)--------------------------------------------------------
+//-- How to make promise?
+
 const promiseOne = new Promise(function(resolve, reject){
     //Do an asnyc task..
     // DB calls, cryptography, network        //--this takes time that's why use await
