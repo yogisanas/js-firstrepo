@@ -13,7 +13,7 @@ const user = {
 console.log(user.username);      //--yogita
 // console.log(user.getUserDetails());
 
-console.log(this);    //--{}  create new object
+console.log(this);    //--{}  create new object / node environment
 
 //********************inspect******************************************* 
 // console.log(this); 
@@ -22,7 +22,7 @@ console.log(this);    //--{}  create new object
 //********************************************************************* */
 
 
-//--new keyword is constructor function--
+//--new keyword is constructor function-- multiple instance using one obj.
 // const promise = new Promise()
 // const date = new Date()            
 
@@ -50,8 +50,10 @@ console.log(userOne);
 console.log(userTwo);
 
 //**** new keyword *********
-//--new keyword creates an empty object called as instance
-//--new keyword calls constructor function
+//--(1) new keyword creates an empty object called as instance, always creates a new instance.
+//--(2) constructor function calls using new keyword.
+//--(3) this keyword inject in that instance / object.
+//--(4) get in function.
 
 console.log(userOne.constructor);    //--[Function: User]
-//--properties of constructor is reference of constructor(User)
+//--property of constructor is reference of constructor(User)

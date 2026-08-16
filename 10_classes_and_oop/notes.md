@@ -1,9 +1,9 @@
 # Javascript and Classes
 
-## OOP
+## OOP   --process
 
 ## Object
-- collection of properties and methods
+- collection of properties and methods  {}
 -toLowerCase
 
 ## why use OOP
@@ -19,7 +19,7 @@ Object literal
 
 
 ## 4 Pillars
-Abstraction
-Encapsulation
-Inheritance
-Polymorphism
+Abstraction    --hide
+Encapsulation  --wrap
+Inheritance    --access
+Polymorphism   --many forms
