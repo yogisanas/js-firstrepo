@@ -1,6 +1,7 @@
 //-- PART-30
 
-//#-- use variable must, return value
+//#-- *use variable must, return value*
+//#-- otherwise it will give wrong value
 
 const myNums = [1, 2, 3]
 

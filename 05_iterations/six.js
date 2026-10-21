@@ -17,7 +17,7 @@
 // anything
 
 
-//#. filter:- Numbers are easy for that --*return array*
+//#. filter:- Numbers are easy for that --*return array, use variable must*
 //--filter is also take callback function.
 //--filter returns a value whereas foreach doesn't return a value.
 //--filter only pass the value when the condition is true. So use only conditional operator.
@@ -59,6 +59,7 @@ const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // true
 //********outside video**************/
 
+//-------------------------------------------------------------------------------------------
 const newNums = []
 
 myNums.forEach((item) => {
@@ -69,7 +70,6 @@ myNums.forEach((item) => {
 
 console.log(newNums);        //--[ 6, 7, 8, 9, 10 ]
 
-//-------------------------------------------------------------------------------------------
 
 // const arr = [1,2,3]
 
