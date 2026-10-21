@@ -1,0 +1,24 @@
+one.js
+1. for loop with var-element
+2. for loop with array
+3. for loop with break & continue
+
+two.js
+1. while loop
+2. while loop with array
+3. do while loop
+
+three.js
+1. for of loop with array
+2. for of loop with string
+3. for of loop with map
+4. for of loop with object
+
+four.js
+1. for in loop with object
+2. for in loop with array
+3. for in loop with string
+
+five.js
+1. foreach loop with func, arrow func, normal func
+2. object inside array

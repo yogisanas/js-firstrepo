@@ -1,5 +1,5 @@
 //-- PART-29
-//#. foreach:- HIGH ORDER ARRAY
+//#. foreach:- HIGH ORDER ARRAY  --*return value*
 //--foreach loop is already inject(check console) in array & required function.
 //--In foreach loop function is callback function. i.e. give me a function that what to do.
 //--In callback function no need to write function name.
