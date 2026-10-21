@@ -1,0 +1,56 @@
+#1. Use filter() and map() to get the names of students who scored more than 50 marks.
+
+const students = [
+    { name: "Amit", marks: 35 },
+    { name: "Priya", marks: 80 },
+    { name: "Rahul", marks: 25 },
+    { name: "Neha", marks: 90 },
+    { name: "Sneha", marks: 60 }
+];
+
+const val = students
+            .filter((item) => item.marks > 50)
+            .map((item) => item.name)
+
+console.log(val);
+
+--[ 'Priya', 'Neha', 'Sneha' ]
+
+
+#2. Find the total marks of students who scored more than 50, using filter() and reduce().
+
+const students = [
+    { name: "Amit", marks: 35 },
+    { name: "Priya", marks: 80 },
+    { name: "Rahul", marks: 25 },
+    { name: "Neha", marks: 90 },
+    { name: "Sneha", marks: 60 }
+];
+
+const val = students
+            .filter((item) => item.marks > 50)
+            .reduce((acc, item) => acc + item.marks, 0)
+
+console.log(val);
+
+--230
+
+
+#3. calculate the total price of all Electronics products costing more than ₹5,000.
+
+const products = [
+    { name: "Laptop", price: 50000, category: "Electronics" },
+    { name: "Phone", price: 20000, category: "Electronics" },
+    { name: "Shirt", price: 1000, category: "Clothing" },
+    { name: "Shoes", price: 3000, category: "Clothing" },
+    { name: "Headphones", price: 2000, category: "Electronics" }
+];
+
+const val = products
+            .filter((item) => item.category == 'Electronics')
+            .filter((item) => item.price > 5000)
+            .reduce((acc, item) => acc + item.price, 0)
+
+console.log(val);
+
+--70000
