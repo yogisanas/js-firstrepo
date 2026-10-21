@@ -74,3 +74,10 @@ const myObject = {
 // for (const [key, value] of myObject) {
 //     //    console.log(key, ':-', value);      //--myObject is not iterable
 // }
+
+for (const item of Object.entries(myObject)) {     //--It returns array
+    console.log(item);
+}
+
+// [ 'game1', 'NFS' ]
+// [ 'game2', 'Spiderman' ]
