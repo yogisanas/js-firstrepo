@@ -1,3 +1,4 @@
+//-- PART-26
 //--without break; remaining all the code get execute except default.
 
 const month = 3

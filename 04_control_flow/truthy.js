@@ -1,3 +1,4 @@
+//-- PART-26
 //--"y@yogita.ai"  --> assume that value is true because it's present, that is truthy value.
 //--""  --> assume that value is false because it's empty
 //--[]  --> true
