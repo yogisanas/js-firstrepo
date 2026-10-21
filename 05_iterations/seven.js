@@ -1,3 +1,4 @@
+//-- PART-30
 //#. MAP:-
 //--We have to use arithmatic operator, it returns all item.
 //--for conditional operator it gives true false for every item.
