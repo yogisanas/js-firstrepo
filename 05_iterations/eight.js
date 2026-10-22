@@ -8,6 +8,8 @@
 
 //--Be careful: calling reduce() on an empty array without an initial value throws a TypeError.
 
+//--the accumulator (acc) stores in reduce()—it can store a sum, a count, an object, or even a string.
+
 const myNums = [1, 2, 3]
 
 // const myTotal = myNums.reduce( function (acc, currval) {
