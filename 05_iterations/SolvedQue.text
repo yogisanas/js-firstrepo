@@ -1,3 +1,5 @@
+//--You can use a ternary operator inside map(), filter(), reduce()
+
 #1. Use filter() and map() to get the names of students who scored more than 50 marks.
 
 const students = [
