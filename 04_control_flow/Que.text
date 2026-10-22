@@ -1,10 +1,31 @@
-What is control flow in JavaScript?
-What is the difference between if, if...else, and if...else if?
-What is the difference between == and === in conditional statements?
-What is the difference between switch and if...else?
-What is truthy and falsy in JavaScript?
-What is the difference between for, while, and do...while loops?
-What is the difference between break and continue?
-What is a nested if statement?
-What happens if no condition in an if...else if chain is true?
-Can we use a ternary operator instead of if...else?
+Q. What is control flow in JavaScript?
+
+Q. What is the difference between if, if...else, and if...else if?
+--if: Executes code when a condition is true.
+--if...else: Chooses between two alternatives.
+--if...else if: Checks multiple conditions.
+
+Q. What is the difference between == and === in conditional statements?
+
+Q. What is the difference between switch and if...else?
+--if...else: Suitable for ranges, complex conditions, and logical expressions.
+--switch: Suitable for comparing one expression against multiple specific values.
+
+Q. What is truthy and falsy in JavaScript?
+--assume that value is true because it's present, that is truthy value
+--assume that value is false because it's empty
+
+Q. What is the difference between for, while, and do...while loops?
+
+Q. What is the difference between break and continue?
+--break: Terminates the loop completely.
+--continue: Skips the current iteration and proceeds to the next one.
+
+Q. What is a nested if statement?
+--An if statement written inside another if statement is called a nested if.
+
+Q. What happens if no condition in an if...else if chain is true?
+--If an else block exists, it executes. Otherwise, JavaScript skips the entire conditional chain.
+
+Q. Can we use a ternary operator instead of if...else?
+-Yes. The ternary operator is a shorter way to write a simple if...else expression.
