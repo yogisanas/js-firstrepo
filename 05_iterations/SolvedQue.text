@@ -54,3 +54,171 @@ const val = products
 console.log(val);
 
 --70000
+
+
+//#. Extract all odd numbers from an array.
+
+const arr = [1,2,3,4,5,6,7,8,9,10]
+
+const val = arr.filter((item) => {        --arr.filter(n => n % 2 === 0);
+    if(item % 2 != 0) {
+        return item
+    }
+})
+
+console.log(val);
+
+--[ 1, 3, 5, 7, 9 ]
+
+
+//#. Add 10 to every number.
+
+const arr = [1,2,3,4,5,6,7,8,9,10]
+
+const val = arr.map((item) => item + 10)
+
+console.log(val);
+
+--[ 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+
+
+//#. Find the product of all numbers.
+
+const arr = [1,2,3,4,5,6,7,8,9,10]
+
+const val = arr.reduce((acc, item) => acc + item, 0)
+
+console.log(val);
+
+--55
+
+
+//#. Extract names from an array of user objects.
+
+const arr = [
+    {
+        id: 1,
+        name: 'yogii'
+    },
+    {
+        id:2,
+        name: 'riya'
+    }
+]
+
+const val = arr.map((item) => item.name)
+
+console.log(val);
+
+--[ 'yogii', 'riya' ]
+
+
+//#. Find the square of every number using.
+
+const nums = [2, 3, 4, 5];
+
+const val = nums.map((item) => item * item)
+
+console.log(val);
+
+--[ 4, 9, 16, 25 ]
+
+
+//#. Convert all names to uppercase.
+
+const names = ["yogita", "rahul", "amit"];
+
+const val = names.map((item) => item.toUpperCase())
+
+console.log(val);
+
+--[ 'YOGITA', 'RAHUL', 'AMIT' ]
+
+
+//#. Find the total salary of all employees.
+
+const employees = [
+    { name: "Amit", salary: 30000 },
+    { name: "Rahul", salary: 40000 },
+    { name: "Priya", salary: 50000 }
+];
+const val = employees.reduce((acc, item) => acc + item.salary, 0)
+
+console.log(val);
+
+--120000
+
+
+//#. Get the names of employees whose salary is greater than 30,000.
+
+const employees = [
+    { name: "Amit", salary: 30000 },
+    { name: "Rahul", salary: 40000 },
+    { name: "Priya", salary: 50000 }
+];
+const val = employees
+            .filter((item) => item.salary > 30000)
+            .map((item) => item.name)
+
+console.log(val);
+
+--[ 'Rahul', 'Priya' ]
+
+
+//#. Find the maximum number.
+
+const nums = [10, 50, 20, 90, 30];
+
+// const val = nums.reduce((max, item) => max > item ? max : item, nums[0])
+
+const val = nums.reduce((max, item) => {
+    if(max > item){
+        return max
+    } else{
+        return item
+    }
+}, nums[0])  --can take 0 also
+
+console.log(val);
+
+--90
+
+
+//#. Count the occurrences of each element.
+
+const fruits = ["apple", "banana", "apple", "orange", "banana", "apple"];
+
+const val = fruits.reduce((count, item) => {
+    count[item] = (count[item] || 0) + 1
+    return count
+}, {})
+
+console.log(val);
+
+--{ apple: 3, banana: 2, orange: 1 }
+
+
+//#. Remove duplicate elements from an array.
+
+const nums = [1, 2, 2, 3, 4, 4, 5];
+
+const result = nums.filter(
+    (n, index) => nums.indexOf(n) === index
+);
+
+// const result = [...new Set(nums)];
+
+console.log(result);
+
+--[ 1, 2, 3, 4, 5 ]
+
+
+//#. Find the first number greater than 10 using array methods.
+
+const nums = [3, 7, 12, 15, 20];
+
+const val = nums.find((item) => item > 10)
+
+console.log(val);
+
+--12
