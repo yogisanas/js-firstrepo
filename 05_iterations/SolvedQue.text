@@ -113,7 +113,7 @@ console.log(val);
 --[ 'yogii', 'riya' ]
 
 
-//#. Find the square of every number using.
+//#. Find the square of every number.
 
 const nums = [2, 3, 4, 5];
 
@@ -222,3 +222,83 @@ const val = nums.find((item) => item > 10)
 console.log(val);
 
 --12
+
+
+//#. Calculate the average of an array.
+
+const nums = [10, 20, 30, 40, 50];
+
+const total = nums.reduce((acc, n) => acc + n, 0);
+
+const average = total / nums.length;
+
+console.log(average);
+
+--30
+
+
+//#. Find the longest string in an array using.
+
+const names = ["Amit", "Priya", "Rahul", "Alexander"];
+
+const result = names.reduce((longest, name) => {
+    return name.length > longest.length ? name : longest;
+});
+
+console.log(result);
+
+--Alexander
+
+
+//#. Convert strings to uppercase and remove short strings.
+
+const names = ["amit", "priya", "raj", "rahul", "neha"];
+
+const result = names
+    .filter(name => name.length > 4)
+    .map(name => name.toUpperCase());
+
+console.log(result);
+
+--[ 'PRIYA', 'RAHUL' ]
+
+
+//#. Count how many students passed, given that passing marks are 40.
+
+const students = [
+    { name: "Amit", marks: 35 },
+    { name: "Priya", marks: 80 },
+    { name: "Rahul", marks: 25 },
+    { name: "Neha", marks: 90 },
+    { name: "Sneha", marks: 40 }
+];
+
+// const result = students.filter(item => item.marks >= 40).length;
+
+const result = students.reduce(
+    (count, item) => item.marks >= 40 ? count + 1 : count,
+    0
+);
+
+console.log(result);  
+
+--3
+
+
+//#. Find the total price of products costing more than ₹1,000.
+
+const products = [
+    { name: "Laptop", price: 50000 },
+    { name: "Mouse", price: 800 },
+    { name: "Keyboard", price: 2000 },
+    { name: "Phone", price: 20000 },
+    { name: "Pen", price: 50 }
+];
+
+const val = products
+            .filter((item) => item.price > 1000)
+            .reduce((acc, item) => acc + item.price, 0)
+
+console.log(val);
+
+--72000
