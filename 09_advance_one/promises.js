@@ -123,7 +123,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
 
 //----------------------------------------------------------------------------------------------------
-
+//--Promise.all()
 
 const p1 = new Promise((resolve) => {
     setTimeout(() => resolve("Promise 1 resolved"), 1000);
@@ -158,3 +158,55 @@ Promise.all([p1, p2, p3])
 // input promises resolve, returning an array of their results in the same order. If any one promise 
 // rejects, it immediately rejects with that error, and the remaining results are ignored, even though 
 // those promises continue executing in the background.
+
+//----------------------------------------------------------------------------------------------------
+//--Promise.allSettled()
+
+const p4 = new Promise(function(resolve){
+    setTimeout(() => resolve('p1 resolved'), 1000)
+})
+
+const p5 = new Promise(function(_, reject){
+    setTimeout(() => reject('p2 rejected'), 1500
+)
+})
+
+const p6 = new Promise(function(resolve){
+    setTimeout(() => resolve('p3 resolved'), 2000)
+})
+
+Promise.allSettled([p4, p5, p6])
+.then((res) => {
+    console.log(res);
+}).catch((err) => console.log(err))
+
+// output:-
+// [
+//   { status: 'fulfilled', value: 'p1 resolved' },
+//   { status: 'rejected', reason: 'p2 rejected' },
+//   { status: 'fulfilled', value: 'p3 resolved' }
+// ]
+
+//----------------------------------------------------------------------------------------------------
+//--Promise.race()
+
+const p7 = new Promise(function(resolve){
+    setTimeout(() => resolve('p1 resolved'), 1000)
+})
+
+const p8 = new Promise(function(_, reject){
+    setTimeout(() => reject('p2 rejected'), 1500
+)
+})
+
+const p9 = new Promise(function(resolve){
+    setTimeout(() => resolve('p3 resolved'), 2000)
+})
+
+Promise.race([p7, p8, p9])
+.then((res) => {
+    console.log(res);
+}).catch((err) => console.log(err))
+
+// output:-
+// p1 resolved

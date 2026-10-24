@@ -1,0 +1,50 @@
+1. What is a Promise in JavaScript?
+    A Promise is an object that represents the eventual success or failure of an asynchronous operation.
+
+      const myPromise = new Promise((resolve, reject) => {
+          resolve("Data received");
+      });
+      
+      myPromise.then((result) => {
+          console.log(result);
+      });
+
+
+2. What are the three states of a Promise?
+    1. Pending: The operation is not completed yet.
+    2. Fulfilled: The operation completed successfully.
+    3. Rejected: The operation failed.
+
+
+3. What are resolve and reject?
+   - resolve() fulfills a Promise with a value.
+   - reject() rejects a Promise with a reason.
+
+     const promise = new Promise((resolve, reject) => {
+       let success = true;
+   
+       if (success) {
+           resolve("Success");
+       } else {
+           reject("Failed");
+       }
+       });
+
+
+4. What is the difference between then() and catch()?
+   - then() handles a fulfilled Promise.
+   - catch() handles a rejected Promise.
+
+
+5. What is the purpose of finally()?
+     finally() executes when the Promise settles, whether fulfilled or rejected.
+
+
+6. What is Promise chaining?
+     Promise chaining means connecting multiple .then() calls so that the result of one step 
+         can be passed to the next.
+
+
+7. What is the difference between Promise.all() and Promise.allSettled()?
+    Promise.all()	                          Promise.allSettled()
+   Rejects if any input Promise rejects.	Waits for all input Promises to settle.
