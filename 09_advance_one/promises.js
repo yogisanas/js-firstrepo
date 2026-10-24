@@ -152,6 +152,9 @@ Promise.all([p1, p2, p3])
 //  p2 -> rejected
 //  p3 -> resolved (ignored)
 
+//--if all resolved:-
+// [ 'p1 resolved', 'p3 resolved' ]
+
 // What does Promise.all() do?
 
 // Promise.all() takes an array of promises and returns a single promise. It resolves only when all 
@@ -167,8 +170,7 @@ const p4 = new Promise(function(resolve){
 })
 
 const p5 = new Promise(function(_, reject){
-    setTimeout(() => reject('p2 rejected'), 1500
-)
+    setTimeout(() => reject('p2 rejected'), 1500)
 })
 
 const p6 = new Promise(function(resolve){
@@ -188,15 +190,14 @@ Promise.allSettled([p4, p5, p6])
 // ]
 
 //----------------------------------------------------------------------------------------------------
-//--Promise.race()
+//--Promise.race() --settles as soon as the first promise finishes, whether it succeeds or fails
 
 const p7 = new Promise(function(resolve){
     setTimeout(() => resolve('p1 resolved'), 1000)
 })
 
 const p8 = new Promise(function(_, reject){
-    setTimeout(() => reject('p2 rejected'), 1500
-)
+    setTimeout(() => reject('p2 rejected'), 1500)
 })
 
 const p9 = new Promise(function(resolve){
@@ -210,3 +211,31 @@ Promise.race([p7, p8, p9])
 
 // output:-
 // p1 resolved
+
+//----------------------------------------------------------------------------------------------------
+//--Promise.any() --specifically waits for the first successful promise
+
+const p10 = new Promise(function(resolve){
+    setTimeout(() => resolve('p1 resolved'), 1000)
+})
+
+const p11 = new Promise(function(_, reject){
+    setTimeout(() => reject('p2 rejected'), 1500)
+})
+
+const p12 = new Promise(function(resolve){
+    setTimeout(() => resolve('p3 resolved'), 2000)
+})
+
+Promise.any([p10, p11, p12])
+.then((res) => {
+    console.log(res);
+}).catch((err) => console.log(err))
+
+// output:-
+// p1 resolved
+
+//--if all rejected:-
+// [AggregateError: All promises were rejected] {
+//   [errors]: [ 'p2 rejected' ]
+// }

@@ -48,3 +48,12 @@
 7. What is the difference between Promise.all() and Promise.allSettled()?
     Promise.all()	                          Promise.allSettled()
    Rejects if any input Promise rejects.	Waits for all input Promises to settle.
+
+
+10. Can we call both resolve() and reject() in the same Promise executor?
+      Yes, both can be called, but only the first settlement takes effect.
+
+      const promise = new Promise((resolve, reject) => {
+         resolve("Success");   //--output
+         reject("Failure"); 
+      });
