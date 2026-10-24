@@ -57,3 +57,6 @@
          resolve("Success");   //--output
          reject("Failure"); 
       });
+      promise.then(console.log).catch(console.log);
+
+      Output: Success
