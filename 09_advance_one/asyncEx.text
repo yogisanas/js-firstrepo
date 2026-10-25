@@ -1,3 +1,12 @@
+#. Synchronous code executes line-by-line in a strict sequential order, meaning each line of 
+code must finish running before the next line can start. Asynchronous code allows time-consuming 
+tasks to start in the background so that the rest of the program can keep running immediately 
+without waiting.
+
+#.single-threaded, synchronous language. This means it has only one call stack and can only 
+do one thing at a time. However, JavaScript achieves asynchronous behavior by passing heavy tasks 
+off to the browser or runtime environment (using Web APIs and the Event Loop).
+
 11. What is async in JavaScript?
       The async keyword makes a function return a Promise.
 
@@ -118,3 +127,82 @@
       
       Remember: fetch() generally does not reject for HTTP errors such as 404 or 500, 
          so checking response.ok is important.
+
+
+20. What is the output of this code?
+       This is a common interview question.
+
+       console.log("Start");
+       
+       setTimeout(() => {
+           console.log("Timeout");
+       }, 0);
+       
+       Promise.resolve().then(() => {
+           console.log("Promise");
+       });
+       
+       console.log("End");
+       
+       Output:-
+       Start
+       End
+       Promise
+       Timeout
+       
+       Why?
+       1. Synchronous code executes first: Start, then End.
+       2. Promise callbacks run as microtasks.
+       3. The setTimeout callback runs later as a task (often called a macrotask).
+
+
+1. Promise.resolve(10)
+    .then((n) => n + 5)
+    .then((n) => console.log(n));
+
+    Output:- 15
+
+2.  async function test() {
+    return 100;
+   }
+
+   console.log(test()); 
+
+   Output:- 100
+
+3.  async function test() {
+    console.log("A");
+    await 0;
+    console.log("B");
+    }
+
+    test();
+    console.log("C");  
+
+    Output: - A, C, B
+
+4.  async function test() {
+    try {
+        await Promise.reject("Error");
+    } catch (error) {
+        console.log("Caught:", error);
+    }
+    }
+
+    test();
+
+    Output:- Caught: Error
+
+5.  console.log(1);
+
+    Promise.resolve().then(() => console.log(2));
+    
+    (async () => {
+        console.log(3);
+        await null;
+        console.log(4);
+    })();
+    
+    console.log(5);
+
+    Output:- 1, 3, 5, 2, 4
