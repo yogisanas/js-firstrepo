@@ -1,4 +1,10 @@
 Q. What is control flow in JavaScript?
+--Control flow determines the order in which JavaScript statements execute.
+
+Example:
+if (age >= 18) {
+    console.log("Eligible");
+}
 
 Q. What is the difference between if, if...else, and if...else if?
 --if: Executes code when a condition is true.
@@ -6,6 +12,8 @@ Q. What is the difference between if, if...else, and if...else if?
 --if...else if: Checks multiple conditions.
 
 Q. What is the difference between == and === in conditional statements?
+-- ==: Compares values
+-- ===: Compares both value and datatype
 
 Q. What is the difference between switch and if...else?
 --if...else: Suitable for ranges, complex conditions, and logical expressions.
@@ -16,6 +24,9 @@ Q. What is truthy and falsy in JavaScript?
 --assume that value is false because it's empty
 
 Q. What is the difference between for, while, and do...while loops?
+--for: Commonly used when the number of iterations is known.
+--while: Checks the condition before each iteration.
+--do...while: Executes at least once because the condition is checked afterward.
 
 Q. What is the difference between break and continue?
 --break: Terminates the loop completely.
@@ -28,4 +39,4 @@ Q. What happens if no condition in an if...else if chain is true?
 --If an else block exists, it executes. Otherwise, JavaScript skips the entire conditional chain.
 
 Q. Can we use a ternary operator instead of if...else?
--Yes. The ternary operator is a shorter way to write a simple if...else expression.
+--Yes. The ternary operator is a shorter way to write a simple if...else expression.
