@@ -37,9 +37,9 @@ const obj3 = { obj1, obj2}    //--add both obj in new obj
 const obj4 = Object.assign(obj1, obj2)  //--({}, obj1, obj2)  --all value combine in that parameter
 // console.log(obj4);          //--{ '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
 // console.log(obj1);          //--{ '1': 'a', '2': 'b', '3': 'a', '4': 'b' } --it consider obj1 as target
+
 //-- {} - optional parameter
 //-- const obj4 = Object.assign(target, source)
-
 const allObj = Object.assign({}, obj1, obj2, obj5)  //--prefer
 console.log(allObj);    //--{ '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }
 console.log(obj1);      //--{ '1': 'a', '2': 'b' }

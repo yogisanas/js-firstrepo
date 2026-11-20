@@ -43,6 +43,7 @@ JsUser.greeting = function(){
 
 JsUser.greetingTwo = function(){
     console.log(`Hello....${this.name}`);  
+    // console.log(`Hello....${JsUser.name}`);  
 }
 
 // console.log(JsUser.greeting);      //--[Function (anonymous)]  --It doesn't execute function 
