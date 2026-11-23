@@ -8,7 +8,7 @@ const nums = [3, 7, 12, 15, 20];
 
 const val = nums.find((item) => item > 10)
 
-console.log(val);
+console.log(val);  //--12
 
 
 
