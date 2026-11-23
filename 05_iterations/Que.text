@@ -1,24 +1,25 @@
-one.js
-1. for loop with var-element
-2. for loop with array
-3. for loop with break & continue
+Method	     Purpose	                                 Returns
+map()	    Transforms every element	                New array
+filter()	Selects elements based on a condition	    New array
+reduce()	Combines elements into a single result	    Any value
 
-two.js
-1. while loop
-2. while loop with array
-3. do while loop
 
-three.js
-1. for of loop with array
-2. for of loop with string
-3. for of loop with map
-4. for of loop with object
+Q2. Does map() modify the original array?
+No. map() creates a new array.
 
-four.js
-1. for in loop with object
-2. for in loop with array
-3. for in loop with string
+Q3. What happens if filter() returns true?
+The element is included in the new array.
 
-five.js
-1. foreach loop with func, arrow func, normal func
-2. object inside array
+Q4. What is the purpose of the initial value in reduce()?
+The initial value determines the starting value of the accumulator.
+
+Q5. Can map(), filter(), and reduce() be chained?
+Yes. Each method can pass its result to the next method.
+
+
+Q6. Filter all even numbers
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8];
+
+const val = nums.filter((item) => item % 2 == 0)
+console.log(val);
