@@ -1,0 +1,131 @@
+3. What is the difference between setTimeout() and setInterval()?
+setTimeout()	                       setInterval()
+Executes once after a delay.	  Repeats at regular intervals.
+Does not repeat automatically.	  Continues until stopped or the environment ends.
+Used for delayed actions.	      Used for clocks, repeated updates, etc.
+
+4. How do you stop setTimeout()?
+Use clearTimeout() with the timer ID.
+
+5. How do you stop setInterval()?
+Use clearInterval() with the interval ID.
+
+6. Do setTimeout() and setInterval() block JavaScript execution?
+No. They schedule callbacks to run later. JavaScript continues executing other synchronous code.
+console.log("Start");
+
+setTimeout(() => {
+    console.log("Timer");
+}, 2000);
+
+console.log("End");
+
+out:-
+Start
+End
+Timer
+
+
+7. Does setTimeout(fn, 0) execute immediately?
+No. It schedules the callback to run after the current synchronous code finishes, 
+subject to event-loop scheduling.
+
+console.log("A");
+
+setTimeout(() => {
+    console.log("B");
+}, 0);
+
+console.log("C");
+
+out:-
+A
+C
+B
+
+
+8. Is the delay in setTimeout() guaranteed?
+No. The delay is a minimum requested waiting time, not an exact execution time. 
+The callback can run later if JavaScript is busy or other scheduling rules delay it.
+
+setTimeout(() => {
+    console.log("Executed");
+}, 1000);
+
+This means the callback becomes eligible to run after about one second; it does not guarantee 
+execution at exactly 1000 milliseconds.
+
+
+9. What does setTimeout() return?
+It returns a timer ID that can be passed to clearTimeout().
+
+const timer = setTimeout(() => {
+    console.log("Hello");
+}, 1000);
+
+console.log(timer);
+
+The returned value depends on the JavaScript environment. Browsers typically return a numeric ID(1);
+ Node.js returns a Timeout object.
+
+
+10. Can we pass arguments to a setTimeout() callback?
+Yes.
+
+11. What happens if we call setInterval() without clearing it?
+It keeps scheduling the callback repeatedly while the interval remains active and the environment 
+continues running. This can cause unnecessary work or resource usage.
+
+
+12. What is the difference between setInterval() and recursive setTimeout()?
+With setInterval(), callbacks are scheduled repeatedly at a fixed interval. With recursive setTimeout(),
+ the next timer is scheduled after the current callback finishes.
+
+ function repeat() {
+    console.log("Hello");
+
+    setTimeout(repeat, 1000);
+}
+
+repeat();
+
+Recursive setTimeout() is useful when the next operation should wait until the previous operation has
+ finished.
+
+
+13. What is the output of this code?
+
+setTimeout(() => {
+    console.log("A");
+}, 1000);
+
+setTimeout(() => {
+    console.log("B");
+}, 0);
+
+console.log("C");
+
+out:-
+C
+B
+A
+
+
+15. What is a common mistake when using setTimeout() inside a loop?
+Consider this code:
+
+for (var i = 1; i <= 3; i++) {
+    setTimeout(() => {
+        console.log(i);
+    }, 1000);
+}
+
+out:-
+4
+4
+4
+
+Why? var is function-scoped, so all callbacks share the same i variable. 
+By the time they run, the loop has finished and i is 4.
+
+Use let to create a separate loop binding for each iteration:
